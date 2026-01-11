@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>MG-512x512.ico</ApplicationIcon>
+    <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+      <ImplicitUsings>enable</ImplicitUsings>
+      <PublishSingleFile>true</PublishSingleFile>
+      <SelfContained>false</SelfContained>
+      <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+      <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="MG-512x512.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WPF-UI" Version="4.2.0" />
+    <PackageReference Include="WPF-UI.DependencyInjection" Version="4.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.1" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0 " />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\MG-512x512.png" />
+    <None Remove="Assets\MG_Studio-512x512-Black.png" />
+    <None Remove="Assets\MG_Studio-512x512-White.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\MG-512x512.png" />
+    <Resource Include="Assets\MG_Studio-512x512-Black.png" />
+    <Resource Include="Assets\MG_Studio-512x512-White.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="res\config\config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="res\config\EditorSettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

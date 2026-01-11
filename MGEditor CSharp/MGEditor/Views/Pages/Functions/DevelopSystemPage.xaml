@@ -1,0 +1,214 @@
+﻿<Page 
+    x:Class="MGEditor.Views.Pages.Functions.DevelopSystemPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:local="clr-namespace:MGEditor.Views.Pages.Functions"
+    xmlns:system="clr-namespace:System;assembly=System.Runtime"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    xmlns:controls="clr-namespace:MGEditor.Controls"
+    Title="养成系统"
+    d:DataContext="{d:DesignInstance local:DevelopSystemPage,
+                                IsDesignTimeCreatable=False}"
+    d:DesignHeight="1200" 
+    d:DesignWidth="700"
+    ui:Design.Background="{DynamicResource ApplicationBackgroundBrush}"
+    ui:Design.Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    Foreground="{DynamicResource TextFillColorPrimaryBrush}"
+    mc:Ignorable="d" >
+    <StackPanel>
+        <controls:FrameGroup
+            HeaderText="基础属性">
+            <StackPanel>
+                <controls:ComboxFrame 
+                    ButtonContent="装卸速度"
+                    ItemsSource="{Binding ViewModel.ConfigItemList.LoadSpeed}"
+                    SelectedValue="{Binding ViewModel.LoadSpeedValue}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="技能经验优化"
+                    IsChecked="{Binding ViewModel.ConfigJson.Globals.ExpOptimize}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="超人模式"
+                    IsChecked="{Binding ViewModel.ConfigJson.Globals.SuperHero}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="去除携带限制"
+                    IsChecked="{Binding ViewModel.ConfigJson.Globals.TakeLimit}"/>
+                
+            </StackPanel>
+        </controls:FrameGroup>
+
+        <controls:FrameGroup
+            HeaderText="装备优化-武器">
+            <StackPanel>
+                <controls:CheckButtonFrame
+                    ButtonContent="武器栏兼容"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.WeaponFilter}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="武器无故障"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.WeaponNoLost}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="武器维修无损耗"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.WeaponRepairPerfect}"/>
+                <controls:ComboxFrame 
+                    ButtonContent="弹匣容量"
+                    ItemsSource="{Binding ViewModel.ConfigItemList.MagazineCapacity}"
+                    SelectedValue="{Binding ViewModel.ConfigJson.Templates.MagazineCapacity}"/>
+            </StackPanel>
+        </controls:FrameGroup>
+        
+        <controls:FrameGroup
+            HeaderText="装备优化-头盔">
+            <StackPanel>
+                <controls:ComboxFrame 
+                    ButtonContent="头盔耐久"
+                    ItemsSource="{Binding ViewModel.ConfigItemList.ItemsDurability}"
+                    SelectedValue="{Binding ViewModel.ConfigJson.Templates.Helmet.Durability}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="头盔兼容耳机"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.Helmet.Filter}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="头盔去除负面BUFF"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.Helmet.NoBuff}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="头盔无负重"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.Helmet.NoWeight}"/>
+
+            </StackPanel>
+        </controls:FrameGroup>
+        
+        <controls:FrameGroup
+            HeaderText="装备优化-弹挂护甲">
+            <StackPanel>
+                <controls:ComboxFrame 
+                    ButtonContent="弹挂护甲耐久"
+                    ItemsSource="{Binding ViewModel.ConfigItemList.ItemsDurability}"
+                    SelectedValue="{Binding ViewModel.ConfigJson.Templates.Armor.Durability}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="弹挂护甲兼容"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.Armor.Filter}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="弹挂护甲去除负面BUFF"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.Armor.NoBuff}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="弹挂护甲无负重"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.Armor.NoWeight}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="弹挂护甲维修无损耗"
+                    IsChecked="{Binding ViewModel.ConfigJson.Globals.ArmorRepairPerfect}"/>
+
+            </StackPanel>
+        </controls:FrameGroup>
+        
+        <controls:FrameGroup
+            HeaderText="装备优化-背包">
+            <StackPanel>
+                <controls:CheckButtonFrame
+                    ButtonContent="背包兼容物品"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.Backpack.Filter}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="背包缩小体积"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.Backpack.SmallSize}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="背包去除负面BUFF"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.Backpack.NoBuff}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="背包无负重"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.Backpack.NoWeight}"/>
+                
+            </StackPanel>
+        </controls:FrameGroup>
+        
+        <controls:FrameGroup
+            HeaderText="装备优化-附魔">
+            <StackPanel>
+                <controls:CheckButtonFrame
+                    ButtonContent="武器附魔100%"
+                    IsChecked="{Binding ViewModel.BuffsWeaponValue}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="护甲附魔100%"
+                    IsChecked="{Binding ViewModel.BuffsArmorValue}"/>
+            </StackPanel>
+        </controls:FrameGroup>
+        
+        <controls:FrameGroup
+            HeaderText="装备优化-保险">
+            <StackPanel>
+                <controls:CheckButtonFrame
+                    ButtonContent="保险扩容"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.Safes.SizeExpand}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="保险兼容物品"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.Safes.Filter}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="保险无负重"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.Safes.NoWeight}"/>
+            </StackPanel>
+        </controls:FrameGroup>
+        
+        <controls:FrameGroup
+            HeaderText="装备优化-物品属性">
+            <StackPanel>
+                <controls:CheckButtonFrame
+                    ButtonContent="T7/热成像优化"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.T7ThermalImaging}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="钥匙无限耐久"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.KeysDurability}"/>
+                <controls:ComboxFrame 
+                    ButtonContent="医疗物品耐久"
+                    ItemsSource="{Binding ViewModel.ConfigItemList.ItemsDurability}"
+                    SelectedValue="{Binding ViewModel.ConfigJson.Templates.MedcDurability}"/>
+            </StackPanel>
+        </controls:FrameGroup>
+        
+        <controls:FrameGroup
+            HeaderText="仓库优化">
+            <StackPanel>
+                <controls:ComboxFrame 
+                    ButtonContent="子弹堆叠调整"
+                    ItemsSource="{Binding ViewModel.ConfigItemList.AmmoStack}"
+                    SelectedValue="{Binding ViewModel.ConfigJson.Templates.AmmoStack}"/>
+                <controls:ComboxFrame 
+                    ButtonContent="子弹堆叠调整"
+                    ItemsSource="{Binding ViewModel.ConfigItemList.MoneyStack}"
+                    SelectedValue="{Binding ViewModel.ConfigJson.Templates.MoneyStack}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="物品全检视"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.Examined}"/>
+            </StackPanel>
+        </controls:FrameGroup>
+        
+        <controls:FrameGroup
+            HeaderText="任务系统">
+            <StackPanel>
+                <controls:CheckButtonFrame
+                    ButtonContent="任务免费重置"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.ResetFree}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="任务优化"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.QuestOptimize}"/>
+            </StackPanel>
+        </controls:FrameGroup>
+        
+        <controls:FrameGroup
+            HeaderText="藏身处">
+            <StackPanel>
+                <controls:ComboxFrame 
+                    ButtonContent="藏身处升级时间"
+                    ItemsSource="{Binding ViewModel.ConfigItemList.HideoutTime}"
+                    SelectedValue="{Binding ViewModel.BuildTimeValue}"/>
+                <controls:ComboxFrame 
+                    ButtonContent="藏身处生产时间"
+                    ItemsSource="{Binding ViewModel.ConfigItemList.HideoutTime}"
+                    SelectedValue="{Binding ViewModel.ProductTimeValue}"/>
+                <controls:ComboxFrame 
+                    ButtonContent="Scav宝箱时间"
+                    ItemsSource="{Binding ViewModel.ConfigItemList.HideoutTime}"
+                    SelectedValue="{Binding ViewModel.ScavCaseTimeValue}"/>
+                
+            </StackPanel>
+        </controls:FrameGroup>
+        
+    </StackPanel>
+</Page>
