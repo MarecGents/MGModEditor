@@ -170,7 +170,7 @@
                     ItemsSource="{Binding ViewModel.ConfigItemList.AmmoStack}"
                     SelectedValue="{Binding ViewModel.ConfigJson.Templates.AmmoStack}"/>
                 <controls:ComboxFrame 
-                    ButtonContent="子弹堆叠调整"
+                    ButtonContent="钱堆叠调整"
                     ItemsSource="{Binding ViewModel.ConfigItemList.MoneyStack}"
                     SelectedValue="{Binding ViewModel.ConfigJson.Templates.MoneyStack}"/>
                 <controls:CheckButtonFrame
