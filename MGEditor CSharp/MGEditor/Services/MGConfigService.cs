@@ -28,6 +28,8 @@ public class MGConfigService
     }
     public void SaveConfig()
     {
+        string nowTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
+        ConfigJson.saveTime = nowTime;
         var configContent = jsonReader.Serialize<MGConfig>(ConfigJson);
         fileUtils.WriteFile(Path.Combine(appPath, "./res/config/config.json"), configContent);
     }

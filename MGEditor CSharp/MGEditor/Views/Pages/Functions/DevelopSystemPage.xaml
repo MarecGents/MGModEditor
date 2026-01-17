@@ -34,7 +34,10 @@
                 <controls:CheckButtonFrame
                     ButtonContent="去除携带限制"
                     IsChecked="{Binding ViewModel.ConfigJson.Globals.TakeLimit}"/>
-                
+                <controls:ComboxFrame
+                    ButtonContent="防护装备耐久"
+                    ItemsSource="{Binding ViewModel.ConfigItemList.ItemsDurability}"
+                    SelectedValue="{Binding ViewModel.ConfigJson.Templates.EquipmentDurability}"/>
             </StackPanel>
         </controls:FrameGroup>
 
@@ -60,10 +63,10 @@
         <controls:FrameGroup
             HeaderText="装备优化-头盔">
             <StackPanel>
-                <controls:ComboxFrame 
-                    ButtonContent="头盔耐久"
-                    ItemsSource="{Binding ViewModel.ConfigItemList.ItemsDurability}"
-                    SelectedValue="{Binding ViewModel.ConfigJson.Templates.Helmet.Durability}"/>
+                <!-- <controls:ComboxFrame  -->
+                <!--     ButtonContent="头盔耐久" -->
+                <!--     ItemsSource="{Binding ViewModel.ConfigItemList.ItemsDurability}" -->
+                <!--     SelectedValue="{Binding ViewModel.ConfigJson.Templates.Helmet.Durability}"/> -->
                 <controls:CheckButtonFrame
                     ButtonContent="头盔兼容头戴式装备"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.Helmet.Filter}"/>
@@ -80,10 +83,10 @@
         <controls:FrameGroup
             HeaderText="装备优化-弹挂护甲">
             <StackPanel>
-                <controls:ComboxFrame 
-                    ButtonContent="弹挂护甲耐久"
-                    ItemsSource="{Binding ViewModel.ConfigItemList.ItemsDurability}"
-                    SelectedValue="{Binding ViewModel.ConfigJson.Templates.Armor.Durability}"/>
+                <!-- <controls:ComboxFrame  -->
+                <!--     ButtonContent="弹挂护甲耐久" -->
+                <!--     ItemsSource="{Binding ViewModel.ConfigItemList.ItemsDurability}" -->
+                <!--     SelectedValue="{Binding ViewModel.ConfigJson.Templates.Armor.Durability}"/> -->
                 <controls:CheckButtonFrame
                     ButtonContent="弹挂护甲兼容"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.Armor.Filter}"/>
