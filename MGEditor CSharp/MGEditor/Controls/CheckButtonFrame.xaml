@@ -21,7 +21,7 @@
                             CornerRadius="5,5,5,5">
                             <Grid>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition MinWidth="180" Width="*"/>
+                                    <ColumnDefinition MinWidth="200" Width="*"/>
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
                                 <ui:Button
@@ -32,7 +32,7 @@
                                     VerticalAlignment="Center"
                                     HorizontalContentAlignment="Center"
                                     VerticalContentAlignment="Center"
-                                    Width="160"
+                                    Width="180"
                                     Margin="20,0,0,0"/>
                                 <ui:ToggleSwitch 
                                     Grid.Column="1"

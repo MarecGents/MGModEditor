@@ -34,10 +34,6 @@
                 <controls:CheckButtonFrame
                     ButtonContent="去除携带限制"
                     IsChecked="{Binding ViewModel.ConfigJson.Globals.TakeLimit}"/>
-                <controls:ComboxFrame
-                    ButtonContent="防护装备耐久"
-                    ItemsSource="{Binding ViewModel.ConfigItemList.ItemsDurability}"
-                    SelectedValue="{Binding ViewModel.ConfigJson.Templates.EquipmentDurability}"/>
             </StackPanel>
         </controls:FrameGroup>
 
@@ -63,10 +59,6 @@
         <controls:FrameGroup
             HeaderText="装备优化-头盔">
             <StackPanel>
-                <!-- <controls:ComboxFrame  -->
-                <!--     ButtonContent="头盔耐久" -->
-                <!--     ItemsSource="{Binding ViewModel.ConfigItemList.ItemsDurability}" -->
-                <!--     SelectedValue="{Binding ViewModel.ConfigJson.Templates.Helmet.Durability}"/> -->
                 <controls:CheckButtonFrame
                     ButtonContent="头盔兼容头戴式装备"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.Helmet.Filter}"/>
@@ -83,10 +75,6 @@
         <controls:FrameGroup
             HeaderText="装备优化-弹挂护甲">
             <StackPanel>
-                <!-- <controls:ComboxFrame  -->
-                <!--     ButtonContent="弹挂护甲耐久" -->
-                <!--     ItemsSource="{Binding ViewModel.ConfigItemList.ItemsDurability}" -->
-                <!--     SelectedValue="{Binding ViewModel.ConfigJson.Templates.Armor.Durability}"/> -->
                 <controls:CheckButtonFrame
                     ButtonContent="弹挂护甲兼容"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.Armor.Filter}"/>
@@ -100,6 +88,22 @@
                     ButtonContent="弹挂护甲维修无损耗"
                     IsChecked="{Binding ViewModel.ConfigJson.Globals.ArmorRepairPerfect}"/>
 
+            </StackPanel>
+        </controls:FrameGroup>
+        
+        <controls:FrameGroup
+            HeaderText="装备优化-插板内衬">
+            <StackPanel>
+                <controls:ComboxFrame
+                    ButtonContent="插板内衬耐久"
+                    ItemsSource="{Binding ViewModel.ConfigItemList.ItemsDurability}"
+                    SelectedValue="{Binding ViewModel.ConfigJson.Templates.EquipmentPlate.Durability}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="插板内衬去除负面BUFF"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.EquipmentPlate.NoBuff}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="插板内衬无负重"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.EquipmentPlate.NoWeight}"/>
             </StackPanel>
         </controls:FrameGroup>
         
