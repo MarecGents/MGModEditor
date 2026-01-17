@@ -65,7 +65,7 @@
                     ItemsSource="{Binding ViewModel.ConfigItemList.ItemsDurability}"
                     SelectedValue="{Binding ViewModel.ConfigJson.Templates.Helmet.Durability}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="头盔兼容耳机"
+                    ButtonContent="头盔兼容头戴式装备"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.Helmet.Filter}"/>
                 <controls:CheckButtonFrame
                     ButtonContent="头盔去除负面BUFF"

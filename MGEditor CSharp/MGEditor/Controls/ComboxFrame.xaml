@@ -30,7 +30,7 @@
                                     VerticalAlignment="Center"
                                     HorizontalContentAlignment="Center"
                                     VerticalContentAlignment="Center"
-                                    Width="150"
+                                    Width="160"
                                     Margin="20,0,0,0"/>
                                 <ComboBox
                                     Grid.Column="1"
