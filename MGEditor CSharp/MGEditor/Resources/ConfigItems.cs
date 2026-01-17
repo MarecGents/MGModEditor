@@ -114,11 +114,11 @@ public class ConfigItems
     };
     public Dictionary<string, List<double>> CloudModeWeight { get; } = new()
     {
-        { "default", new List<double> { 100, 22, 22, 15, 15, 15, 5, 4 } },
-        { "mode1", new List<double> { 100, 0, 0, 0, 0, 0, 0, 0 } },
-        { "mode2", new List<double> { 100, 50, 50, 50, 0, 0, 0, 0 } },
-        { "mode3", new List<double> { 0, 0, 100, 50, 50, 50, 0, 0 } },
-        { "mode4", new List<double> { 0, 0, 0, 0, 0, 50, 50, 100 } },
+        { "default", new List<double> { 20, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0 } },
+        { "mode1", new List<double> { 20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0  } },
+        { "mode2", new List<double> { 0, 0, 20, 10, 10, 5, 0, 0, 0, 0, 0  } },
+        { "mode3", new List<double> { 0, 0, 0, 0, 0, 10, 20, 20, 10, 0, 0  } },
+        { "mode4", new List<double> { 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 20  } },
     };
 
     public List<KeyValue> WindMode { get; } = new()
@@ -133,8 +133,8 @@ public class ConfigItems
     {
         { "default", new List<double> { 6, 3, 2, 1, 1 } },
         { "mode1", new List<double> { 10, 0, 0, 0, 0 } },
-        { "mode2", new List<double> { 3, 3, 1, 0, 0 } },
-        { "mode3", new List<double> { 1, 1, 2, 3, 6 } },
+        { "mode2", new List<double> { 0, 6, 0, 0, 0 } },
+        { "mode3", new List<double> { 0, 0, 3, 3, 0 } },
         { "mode4", new List<double> { 0, 0, 0, 0, 10 } },
     };
 
@@ -149,12 +149,12 @@ public class ConfigItems
     };
     public Dictionary<string, List<double>> RainModeWeight { get; } = new()
     {
-        { "default", new List<double> { 25, 1, 1, 1, 1 } },
+        { "default", new List<double> { 1, 0, 0, 0, 0 } },
         { "mode1", new List<double> { 0, 0, 0, 0, 0 } },
-        { "mode2", new List<double> { 25, 0, 0, 0, 0 } },
-        { "mode3", new List<double> { 0, 25, 25, 0, 0 } },
-        { "mode4", new List<double> { 0, 0, 25, 25, 0 } },
-        { "mode5", new List<double> { 0, 0, 0, 0, 25 } },
+        { "mode2", new List<double> { 0, 5, 0, 0, 0 } },
+        { "mode3", new List<double> { 0, 5, 5, 0, 0 } },
+        { "mode4", new List<double> { 0, 0, 10, 10, 0 } },
+        { "mode5", new List<double> { 0, 0, 0, 0, 10 } },
     };
 
     public List<KeyValue> FogMode { get; } = new()
@@ -167,11 +167,11 @@ public class ConfigItems
     };
     public Dictionary<string, List<double>> FogModeWeight { get; } = new()
     {
-        { "default", new List<double> { 35, 6, 4, 3, 1 } },
+        { "default", new List<double> { 30, 6, 4, 3, 1 } },
         { "mode1", new List<double> { 35, 0, 0, 0, 0 } },
-        { "mode2", new List<double> { 0, 35, 35, 0, 0 } },
-        { "mode3", new List<double> { 0, 0, 35, 35, 0 } },
-        { "mode4", new List<double> { 0, 0, 0, 0, 35 } },
+        { "mode2", new List<double> { 0, 35, 0, 0, 0 } },
+        { "mode3", new List<double> { 0, 0, 35, 0, 0 } },
+        { "mode4", new List<double> { 0, 0, 0, 35, 35 } },
     };
 
     public List<KeyValue> LootMultiple { get; } = new()

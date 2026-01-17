@@ -205,9 +205,44 @@ public partial class RaidSystemViewModel: ViewModel
     }
     private void SetRainIntensity(string value)
     {
-        if (value == "mode1")
+        switch  (value)
         {
-            ConfigJson.Config.WeatherSettings.rainIntensity.Max = 0;
+            case "mode1":
+            {
+                ConfigJson.Config.WeatherSettings.rainIntensity.Min = 0;
+                ConfigJson.Config.WeatherSettings.rainIntensity.Max = 0;
+                break;
+            }
+            case "mode2":
+            {
+                ConfigJson.Config.WeatherSettings.rainIntensity.Min = 0.2;
+                ConfigJson.Config.WeatherSettings.rainIntensity.Max = 0.2;
+                break;
+            }
+            case "mode3":
+            {
+                ConfigJson.Config.WeatherSettings.rainIntensity.Min = 0.4;
+                ConfigJson.Config.WeatherSettings.rainIntensity.Max = 0.4;
+                break;
+            }
+            case "mode4":
+            {
+                ConfigJson.Config.WeatherSettings.rainIntensity.Min = 0.75;
+                ConfigJson.Config.WeatherSettings.rainIntensity.Max = 0.75;
+                break;
+            }
+            case "mode5":
+            {
+                ConfigJson.Config.WeatherSettings.rainIntensity.Min = 1;
+                ConfigJson.Config.WeatherSettings.rainIntensity.Max = 1;
+                break;
+            }
+            case "default":
+            {
+                ConfigJson.Config.WeatherSettings.rainIntensity.Min = 0;
+                ConfigJson.Config.WeatherSettings.rainIntensity.Max = 1;
+                break;
+            }
         }
     }
     partial void OnFogModeChanged(string value)
