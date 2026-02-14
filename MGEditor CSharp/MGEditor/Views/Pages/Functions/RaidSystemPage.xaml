@@ -149,7 +149,7 @@
                     ItemsSource="{Binding ViewModel.ConfigItemList.LootMultiple}"
                     SelectedValue="{Binding ViewModel.ConfigJson.Globals.LootMultiplier.Value}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="容器随机生成"
+                    ButtonContent="关闭容器随机生成"
                     IsChecked="{Binding ViewModel.ConfigJson.Config.RandomContainer}"/>
             </StackPanel>
         </controls:FrameGroup>
