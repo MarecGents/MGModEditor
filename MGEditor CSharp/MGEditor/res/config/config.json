@@ -158,7 +158,11 @@
             "enable": true,
             "value": 30
         },
-        "UpgradeNoLimit": false
+        "UpgradeNoLimit": false,
+        "BonusesLevel": {
+            "enable": false,
+            "value": 1
+        }
     },
     "Locations": {
         "RaidTime": {

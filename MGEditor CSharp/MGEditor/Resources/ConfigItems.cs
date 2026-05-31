@@ -289,7 +289,13 @@ public class ConfigItems
         new KeyValue{ Key=10800.0, Value="3小时" },
     };
 
-
+    public List<KeyValue> BonusesLevel { get; } = new()
+    {
+        new KeyValue { Key = 1, Value = "默认加成" },
+        new KeyValue { Key = 2, Value = "双倍加成" },
+        new KeyValue { Key = 3, Value = "五倍加成" },
+        new KeyValue { Key = 4, Value = "十倍加成" },
+    };
 
     public List<KeyValue> ContainerExpandWidth { get; } = Enumerable.Range(1, 20)
         .Select(i => new KeyValue { Key = i, Value = $"{i}格" })

@@ -216,6 +216,10 @@
                 <controls:CheckButtonFrame
                     ButtonContent="藏身处升级无限制"
                     IsChecked="{Binding ViewModel.ConfigJson.Hideout.UpgradeNoLimit}"/>
+                <controls:ComboxFrame 
+                    ButtonContent="藏身处区域加成等级"
+                    ItemsSource="{Binding ViewModel.ConfigItemList.BonusesLevel}"
+                    SelectedValue="{Binding ViewModel.BonusesLevelValue}"/>
             </StackPanel>
         </controls:FrameGroup>
         

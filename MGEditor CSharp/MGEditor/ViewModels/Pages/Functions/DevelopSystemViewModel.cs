@@ -49,6 +49,7 @@ public partial class DevelopSystemViewModel : ViewModel
         BuildTimeValue = ConfigJson.Hideout.BuildTime.enable ? ConfigJson.Hideout.BuildTime.value : -1.0;
         ProductTimeValue = ConfigJson.Hideout.ProductTime.enable ? ConfigJson.Hideout.ProductTime.value : -1.0;
         ScavCaseTimeValue = ConfigJson.Hideout.ScavCaseTime.enable ? ConfigJson.Hideout.ScavCaseTime.value : -1.0;
+        BonusesLevelValue = ConfigJson.Hideout.BonusesLevel.enable ? ConfigJson.Hideout.BonusesLevel.value : 1;
     }
 
 
@@ -137,6 +138,21 @@ public partial class DevelopSystemViewModel : ViewModel
         {
             ConfigJson.Hideout.ScavCaseTime.enable = true;
             ConfigJson.Hideout.ScavCaseTime.value = value;
+        }
+    }
+    
+    [ObservableProperty]
+    private int _bonusesLevelValue;
+    partial void OnBonusesLevelValueChanged(int value)
+    {
+        if (value == 1)
+        {
+            ConfigJson.Hideout.BonusesLevel.enable = false;
+        }
+        else
+        {
+            ConfigJson.Hideout.BonusesLevel.enable = true;
+            ConfigJson.Hideout.BonusesLevel.value = value;
         }
     }
 }

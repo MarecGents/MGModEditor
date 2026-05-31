@@ -122,6 +122,7 @@ public class MGModConfig_Hideout
     public EnableValueDouble ProductTime { get; set; } // string || double
     public EnableValueDouble ScavCaseTime { get; set; } // string || double
     public bool UpgradeNoLimit { get; set; }
+    public EnableValueInt BonusesLevel { get; set; } 
 }
 public class MGModConfig_Locations
 {
