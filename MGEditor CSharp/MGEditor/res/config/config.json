@@ -157,7 +157,8 @@
         "ScavCaseTime": {
             "enable": true,
             "value": 30
-        }
+        },
+        "UpgradeNoLimit": false
     },
     "Locations": {
         "RaidTime": {

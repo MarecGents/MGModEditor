@@ -213,7 +213,9 @@
                     ButtonContent="Scav宝箱时间"
                     ItemsSource="{Binding ViewModel.ConfigItemList.HideoutTime}"
                     SelectedValue="{Binding ViewModel.ScavCaseTimeValue}"/>
-                
+                <controls:CheckButtonFrame
+                    ButtonContent="藏身处升级无限制"
+                    IsChecked="{Binding ViewModel.ConfigJson.Hideout.UpgradeNoLimit}"/>
             </StackPanel>
         </controls:FrameGroup>
         

@@ -121,6 +121,7 @@ public class MGModConfig_Hideout
     public EnableValueDouble BuildTime { get; set; } // string || double
     public EnableValueDouble ProductTime { get; set; } // string || double
     public EnableValueDouble ScavCaseTime { get; set; } // string || double
+    public bool UpgradeNoLimit { get; set; }
 }
 public class MGModConfig_Locations
 {
