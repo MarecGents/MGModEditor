@@ -162,7 +162,8 @@
         "BonusesLevel": {
             "enable": false,
             "value": 1
-        }
+        },
+        "NoNeedsFuel": false
     },
     "Locations": {
         "RaidTime": {

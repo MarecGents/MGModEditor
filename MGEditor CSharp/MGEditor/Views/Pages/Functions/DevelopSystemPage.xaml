@@ -220,6 +220,9 @@
                     ButtonContent="藏身处区域加成等级"
                     ItemsSource="{Binding ViewModel.ConfigItemList.BonusesLevel}"
                     SelectedValue="{Binding ViewModel.BonusesLevelValue}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="藏身处区域无需供电"
+                    IsChecked="{Binding ViewModel.ConfigJson.Hideout.NoNeedsFuel}"/>
             </StackPanel>
         </controls:FrameGroup>
         
