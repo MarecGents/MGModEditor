@@ -296,6 +296,16 @@ public class ConfigItems
         new KeyValue { Key = 3, Value = "五倍加成" },
         new KeyValue { Key = 4, Value = "十倍加成" },
     };
+    
+    public List<KeyValue> RewardMultiple { get; } = new()
+    {
+        new KeyValue { Key = 1, Value = "默认倍率" },
+        new KeyValue { Key = 2, Value = "x2" },
+        new KeyValue { Key = 3, Value = "x3" },
+        new KeyValue { Key = 4, Value = "x4" },
+        new KeyValue { Key = 5, Value = "x5" },
+        new KeyValue { Key = 10, Value = "x10" },
+    };
 
     public List<KeyValue> ContainerExpandWidth { get; } = Enumerable.Range(1, 20)
         .Select(i => new KeyValue { Key = i, Value = $"{i}格" })

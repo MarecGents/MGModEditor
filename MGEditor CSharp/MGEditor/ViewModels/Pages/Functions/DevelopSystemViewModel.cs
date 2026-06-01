@@ -50,6 +50,9 @@ public partial class DevelopSystemViewModel : ViewModel
         ProductTimeValue = ConfigJson.Hideout.ProductTime.enable ? ConfigJson.Hideout.ProductTime.value : -1.0;
         ScavCaseTimeValue = ConfigJson.Hideout.ScavCaseTime.enable ? ConfigJson.Hideout.ScavCaseTime.value : -1.0;
         BonusesLevelValue = ConfigJson.Hideout.BonusesLevel.enable ? ConfigJson.Hideout.BonusesLevel.value : 1;
+        RewardMultipleValue = ConfigJson.Hideout.Qte.RewardMultiple.enable
+            ? ConfigJson.Hideout.Qte.RewardMultiple.value
+            : 1;
     }
 
 
@@ -153,6 +156,21 @@ public partial class DevelopSystemViewModel : ViewModel
         {
             ConfigJson.Hideout.BonusesLevel.enable = true;
             ConfigJson.Hideout.BonusesLevel.value = value;
+        }
+    }
+    
+    [ObservableProperty]
+    private int _rewardMultipleValue;
+    partial void OnRewardMultipleValueChanged(int value)
+    {
+        if (value == 1)
+        {
+            ConfigJson.Hideout.Qte.RewardMultiple.enable = false;
+        }
+        else
+        {
+            ConfigJson.Hideout.Qte.RewardMultiple.enable = true;
+            ConfigJson.Hideout.Qte.RewardMultiple.value = value;
         }
     }
 }

@@ -223,6 +223,16 @@
                 <controls:CheckButtonFrame
                     ButtonContent="藏身处区域无需供电"
                     IsChecked="{Binding ViewModel.ConfigJson.Hideout.NoNeedsFuel}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="健身房锻炼百分百成功"
+                    IsChecked="{Binding ViewModel.ConfigJson.Hideout.Qte.Sucess100}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="健身房锻炼无惩罚"
+                    IsChecked="{Binding ViewModel.ConfigJson.Hideout.Qte.NoPunish}"/>
+                <controls:ComboxFrame 
+                    ButtonContent="健身房锻炼奖励倍率"
+                    ItemsSource="{Binding ViewModel.ConfigItemList.RewardMultiple}"
+                    SelectedValue="{Binding ViewModel.RewardMultipleValue}"/>
             </StackPanel>
         </controls:FrameGroup>
         
