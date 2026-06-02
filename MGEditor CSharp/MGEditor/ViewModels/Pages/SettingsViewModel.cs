@@ -36,8 +36,8 @@ public partial class SettingsViewModel : ViewModel
 
     private string GetAssemblyVersion()
     {
-        return System.Reflection.Assembly.GetExecutingAssembly().GetName().Version?.ToString()
-            ?? String.Empty;
+        return GalleryAssembly.Asssembly.GetName().Version?.ToString()
+               ?? String.Empty;
     }
     
     [ObservableProperty]
