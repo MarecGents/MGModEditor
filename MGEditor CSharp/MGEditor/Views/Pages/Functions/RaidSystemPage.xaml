@@ -96,6 +96,9 @@
                 <controls:CheckButtonFrame
                     ButtonContent="Scav战局优化"
                     IsChecked="{Binding ViewModel.ConfigJson.Globals.ScavOptimize}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="死亡不掉落"
+                    IsChecked="{Binding ViewModel.ConfigJson.Config.NoLostonDeath}"/>
             </StackPanel>
         </controls:FrameGroup>
         
