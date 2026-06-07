@@ -1,4 +1,4 @@
-﻿<!--
+<!--
     This Source Code Form is subject to the terms of the MIT License.
     If a copy of the MIT was not distributed with this file, You can obtain one at https://opensource.org/licenses/MIT.
     Copyright (C) Leszek Pomianowski and WPF UI Contributors.
@@ -97,7 +97,7 @@
 
     <Color x:Key="SmokeFillColorDefault">#4D2ECC71</Color>
 
-    <Color x:Key="LayerFillColorDefault">#CCB8E0C4</Color>
+    <Color x:Key="LayerFillColorDefault">#CCF5FAF4</Color>
     <Color x:Key="LayerFillColorAlt">#FFE8F5EA</Color>
     <Color x:Key="LayerOnAcrylicFillColorDefault">#40E8F5EA</Color>
     <Color x:Key="LayerOnAccentAcrylicFillColorDefault">#402ECC71</Color>
@@ -115,8 +115,8 @@
 
     <Color x:Key="SolidBackgroundFillColorBase">#FFC8E8D0</Color>
     <Color x:Key="SolidBackgroundFillColorSecondary">#FFE8F5EA</Color>
-    <Color x:Key="SolidBackgroundFillColorTertiary">#FFB8E0C4</Color>
-    <Color x:Key="SolidBackgroundFillColorQuarternary">#FFB8E0C4</Color>
+    <Color x:Key="SolidBackgroundFillColorTertiary">#FFF5FAF4</Color>
+    <Color x:Key="SolidBackgroundFillColorQuarternary">#FFFDFDFB</Color>
     <Color x:Key="SolidBackgroundFillColorTransparent">#00E8F5EA</Color>
     <Color x:Key="SolidBackgroundFillColorBaseAlt">#FFC8E8D0</Color>
 

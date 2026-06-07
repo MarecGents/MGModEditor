@@ -32,6 +32,7 @@ namespace MGEditor.Services
         {
             _mGConfigService.LoadConfig();
             _appSettingService.LoadSetting();
+            _appSettingService.ApplySettings();
             await HandleActivationAsync();
         }
 

@@ -40,14 +40,24 @@ public class AppSettingService
     {
         // Theme
         if (appPersonalized.Theme == "Light")
-            ApplicationThemeManager.Apply(ApplicationTheme.Light,WindowBackdropType.Auto);
+        {
+            CustomThemeService.Remove();
+            ApplicationThemeManager.Apply(ApplicationTheme.Light, WindowBackdropType.None, false);
+        }
         else if (appPersonalized.Theme == "Dark")
-            ApplicationThemeManager.Apply(ApplicationTheme.Dark,WindowBackdropType.Auto);
+        {
+            CustomThemeService.Remove();
+            ApplicationThemeManager.Apply(ApplicationTheme.Dark, WindowBackdropType.None, false);
+        }
         else if (appPersonalized.Theme == "HighContrast")
-            ApplicationThemeManager.Apply(ApplicationTheme.HighContrast,WindowBackdropType.Auto);
-        else if (appPersonalized.Theme == "Unknown")
-            ApplicationThemeManager.Apply(ApplicationTheme.Unknown,WindowBackdropType.Auto);
-        
+        {
+            CustomThemeService.Remove();
+            ApplicationThemeManager.Apply(ApplicationTheme.HighContrast, WindowBackdropType.None, false);
+        }
+        else
+        {
+            CustomThemeService.Apply(appPersonalized.Theme);
+        }
         //
     }
 }

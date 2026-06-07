@@ -22,7 +22,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "PurpleLight",
-            DisplayName = "Purple Light",
+            DisplayName = "薰衣草色",
             IndicatorColor = Color.FromRgb(0x9B, 0x59, 0xB6),
             DictionaryFileName = "PurpleLight.xaml",
             SystemAccent = Color.FromRgb(0x9B, 0x59, 0xB6),
@@ -33,7 +33,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "PurpleDark",
-            DisplayName = "Purple Dark",
+            DisplayName = "罗兰色",
             IndicatorColor = Color.FromRgb(0x4A, 0x23, 0x5A),
             DictionaryFileName = "PurpleDark.xaml",
             SystemAccent = Color.FromRgb(0x9B, 0x59, 0xB6),
@@ -44,7 +44,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "OceanLight",
-            DisplayName = "Ocean Light",
+            DisplayName = "海蓝色",
             IndicatorColor = Color.FromRgb(0x34, 0x98, 0xDB),
             DictionaryFileName = "OceanLight.xaml",
             SystemAccent = Color.FromRgb(0x34, 0x98, 0xDB),
@@ -55,7 +55,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "OceanDark",
-            DisplayName = "Ocean Dark",
+            DisplayName = "深蓝色",
             IndicatorColor = Color.FromRgb(0x0A, 0x16, 0x28),
             DictionaryFileName = "OceanDark.xaml",
             SystemAccent = Color.FromRgb(0x34, 0x98, 0xDB),
@@ -66,7 +66,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "RedLight",
-            DisplayName = "Red Light",
+            DisplayName = "朱砂色",
             IndicatorColor = Color.FromRgb(0xE7, 0x4C, 0x3C),
             DictionaryFileName = "RedLight.xaml",
             SystemAccent = Color.FromRgb(0xE7, 0x4C, 0x3C),
@@ -77,7 +77,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "RedDark",
-            DisplayName = "Red Dark",
+            DisplayName = "赤霞色",
             IndicatorColor = Color.FromRgb(0xE7, 0x4C, 0x3C),
             DictionaryFileName = "RedDark.xaml",
             SystemAccent = Color.FromRgb(0xE7, 0x4C, 0x3C),
@@ -88,7 +88,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "OrangeLight",
-            DisplayName = "Orange Light",
+            DisplayName = "暖阳色",
             IndicatorColor = Color.FromRgb(0xF3, 0x9C, 0x12),
             DictionaryFileName = "OrangeLight.xaml",
             SystemAccent = Color.FromRgb(0xF3, 0x9C, 0x12),
@@ -99,7 +99,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "OrangeDark",
-            DisplayName = "Orange Dark",
+            DisplayName = "琥珀色",
             IndicatorColor = Color.FromRgb(0xF3, 0x9C, 0x12),
             DictionaryFileName = "OrangeDark.xaml",
             SystemAccent = Color.FromRgb(0xF3, 0x9C, 0x12),
@@ -110,7 +110,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "YellowLight",
-            DisplayName = "Yellow Light",
+            DisplayName = "金盏色",
             IndicatorColor = Color.FromRgb(0xF1, 0xC4, 0x0F),
             DictionaryFileName = "YellowLight.xaml",
             SystemAccent = Color.FromRgb(0xF1, 0xC4, 0x0F),
@@ -121,7 +121,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "YellowDark",
-            DisplayName = "Yellow Dark",
+            DisplayName = "麦浪色",
             IndicatorColor = Color.FromRgb(0xF1, 0xC4, 0x0F),
             DictionaryFileName = "YellowDark.xaml",
             SystemAccent = Color.FromRgb(0xF1, 0xC4, 0x0F),
@@ -132,7 +132,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "GreenLight",
-            DisplayName = "Green Light",
+            DisplayName = "春芽色",
             IndicatorColor = Color.FromRgb(0x2E, 0xCC, 0x71),
             DictionaryFileName = "GreenLight.xaml",
             SystemAccent = Color.FromRgb(0x2E, 0xCC, 0x71),
@@ -143,7 +143,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "GreenDark",
-            DisplayName = "Green Dark",
+            DisplayName = "松柏色",
             IndicatorColor = Color.FromRgb(0x2E, 0xCC, 0x71),
             DictionaryFileName = "GreenDark.xaml",
             SystemAccent = Color.FromRgb(0x2E, 0xCC, 0x71),
@@ -154,7 +154,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "CyanLight",
-            DisplayName = "Cyan Light",
+            DisplayName = "碧波色",
             IndicatorColor = Color.FromRgb(0x1A, 0xBC, 0x9C),
             DictionaryFileName = "CyanLight.xaml",
             SystemAccent = Color.FromRgb(0x1A, 0xBC, 0x9C),
@@ -165,7 +165,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "CyanDark",
-            DisplayName = "Cyan Dark",
+            DisplayName = "翡翠色",
             IndicatorColor = Color.FromRgb(0x1A, 0xBC, 0x9C),
             DictionaryFileName = "CyanDark.xaml",
             SystemAccent = Color.FromRgb(0x1A, 0xBC, 0x9C),
@@ -176,7 +176,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "SapphireLight",
-            DisplayName = "Sapphire Light",
+            DisplayName = "宝石蓝色",
             IndicatorColor = Color.FromRgb(0x2E, 0x86, 0xC1),
             DictionaryFileName = "SapphireLight.xaml",
             SystemAccent = Color.FromRgb(0x2E, 0x86, 0xC1),
@@ -187,7 +187,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "SapphireDark",
-            DisplayName = "Sapphire Dark",
+            DisplayName = "星空色",
             IndicatorColor = Color.FromRgb(0x2E, 0x86, 0xC1),
             DictionaryFileName = "SapphireDark.xaml",
             SystemAccent = Color.FromRgb(0x2E, 0x86, 0xC1),
@@ -198,7 +198,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "VioletLight",
-            DisplayName = "Violet Light",
+            DisplayName = "紫苑色",
             IndicatorColor = Color.FromRgb(0x8E, 0x44, 0xAD),
             DictionaryFileName = "VioletLight.xaml",
             SystemAccent = Color.FromRgb(0x8E, 0x44, 0xAD),
@@ -209,7 +209,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "VioletDark",
-            DisplayName = "Violet Dark",
+            DisplayName = "紫晶色",
             IndicatorColor = Color.FromRgb(0x8E, 0x44, 0xAD),
             DictionaryFileName = "VioletDark.xaml",
             SystemAccent = Color.FromRgb(0x8E, 0x44, 0xAD),
@@ -220,7 +220,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "PinkLight",
-            DisplayName = "Pink Light",
+            DisplayName = "樱花色",
             IndicatorColor = Color.FromRgb(0xE9, 0x1E, 0x63),
             DictionaryFileName = "PinkLight.xaml",
             SystemAccent = Color.FromRgb(0xE9, 0x1E, 0x63),
@@ -231,7 +231,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "PinkDark",
-            DisplayName = "Pink Dark",
+            DisplayName = "胭脂色",
             IndicatorColor = Color.FromRgb(0xE9, 0x1E, 0x63),
             DictionaryFileName = "PinkDark.xaml",
             SystemAccent = Color.FromRgb(0xE9, 0x1E, 0x63),
@@ -242,7 +242,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "BrownLight",
-            DisplayName = "Brown Light",
+            DisplayName = "可可色",
             IndicatorColor = Color.FromRgb(0x8D, 0x6E, 0x63),
             DictionaryFileName = "BrownLight.xaml",
             SystemAccent = Color.FromRgb(0x8D, 0x6E, 0x63),
@@ -253,7 +253,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "BrownDark",
-            DisplayName = "Brown Dark",
+            DisplayName = "咖啡色",
             IndicatorColor = Color.FromRgb(0x8D, 0x6E, 0x63),
             DictionaryFileName = "BrownDark.xaml",
             SystemAccent = Color.FromRgb(0x8D, 0x6E, 0x63),
@@ -264,7 +264,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "GrayLight",
-            DisplayName = "Gray Light",
+            DisplayName = "烟灰色",
             IndicatorColor = Color.FromRgb(0x95, 0xA5, 0xA6),
             DictionaryFileName = "GrayLight.xaml",
             SystemAccent = Color.FromRgb(0x95, 0xA5, 0xA6),
@@ -275,7 +275,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "GrayDark",
-            DisplayName = "Gray Dark",
+            DisplayName = "石墨色",
             IndicatorColor = Color.FromRgb(0x95, 0xA5, 0xA6),
             DictionaryFileName = "GrayDark.xaml",
             SystemAccent = Color.FromRgb(0x95, 0xA5, 0xA6),
@@ -286,7 +286,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "BlackLight",
-            DisplayName = "Black Light",
+            DisplayName = "玄青色",
             IndicatorColor = Color.FromRgb(0x2C, 0x3E, 0x50),
             DictionaryFileName = "BlackLight.xaml",
             SystemAccent = Color.FromRgb(0x2C, 0x3E, 0x50),
@@ -297,7 +297,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "BlackDark",
-            DisplayName = "Black Dark",
+            DisplayName = "炭黑色",
             IndicatorColor = Color.FromRgb(0x2C, 0x3E, 0x50),
             DictionaryFileName = "BlackDark.xaml",
             SystemAccent = Color.FromRgb(0x2C, 0x3E, 0x50),
@@ -308,7 +308,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "WhiteLight",
-            DisplayName = "White Light",
+            DisplayName = "月白色",
             IndicatorColor = Color.FromRgb(0xEC, 0xF0, 0xF1),
             DictionaryFileName = "WhiteLight.xaml",
             SystemAccent = Color.FromRgb(0xEC, 0xF0, 0xF1),
@@ -319,7 +319,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "WhiteDark",
-            DisplayName = "White Dark",
+            DisplayName = "霜白色",
             IndicatorColor = Color.FromRgb(0xEC, 0xF0, 0xF1),
             DictionaryFileName = "WhiteDark.xaml",
             SystemAccent = Color.FromRgb(0xEC, 0xF0, 0xF1),
@@ -330,7 +330,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "MagentaLight",
-            DisplayName = "Magenta Light",
+            DisplayName = "玫瑰红色",
             IndicatorColor = Color.FromRgb(0xC2, 0x18, 0x5B),
             DictionaryFileName = "MagentaLight.xaml",
             SystemAccent = Color.FromRgb(0xC2, 0x18, 0x5B),
@@ -341,7 +341,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "MagentaDark",
-            DisplayName = "Magenta Dark",
+            DisplayName = "酒红色",
             IndicatorColor = Color.FromRgb(0xC2, 0x18, 0x5B),
             DictionaryFileName = "MagentaDark.xaml",
             SystemAccent = Color.FromRgb(0xC2, 0x18, 0x5B),
@@ -352,7 +352,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "LemonLight",
-            DisplayName = "Lemon Light",
+            DisplayName = "鹅黄色",
             IndicatorColor = Color.FromRgb(0xFF, 0xF1, 0x76),
             DictionaryFileName = "LemonLight.xaml",
             SystemAccent = Color.FromRgb(0xFF, 0xF1, 0x76),
@@ -363,7 +363,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "LemonDark",
-            DisplayName = "Lemon Dark",
+            DisplayName = "蜜色",
             IndicatorColor = Color.FromRgb(0xFF, 0xF1, 0x76),
             DictionaryFileName = "LemonDark.xaml",
             SystemAccent = Color.FromRgb(0xFF, 0xF1, 0x76),
@@ -374,7 +374,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "IndigoLight",
-            DisplayName = "Indigo Light",
+            DisplayName = "黛蓝色",
             IndicatorColor = Color.FromRgb(0x39, 0x49, 0xAB),
             DictionaryFileName = "IndigoLight.xaml",
             SystemAccent = Color.FromRgb(0x39, 0x49, 0xAB),
@@ -385,7 +385,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "IndigoDark",
-            DisplayName = "Indigo Dark",
+            DisplayName = "藏青色",
             IndicatorColor = Color.FromRgb(0x39, 0x49, 0xAB),
             DictionaryFileName = "IndigoDark.xaml",
             SystemAccent = Color.FromRgb(0x39, 0x49, 0xAB),
@@ -396,7 +396,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "TeaLight",
-            DisplayName = "Tea Light",
+            DisplayName = "檀香色",
             IndicatorColor = Color.FromRgb(0xA1, 0x88, 0x7F),
             DictionaryFileName = "TeaLight.xaml",
             SystemAccent = Color.FromRgb(0xA1, 0x88, 0x7F),
@@ -407,7 +407,7 @@ public static class CustomThemeRegistry
         new()
         {
             Key = "TeaDark",
-            DisplayName = "Tea Dark",
+            DisplayName = "赭石色",
             IndicatorColor = Color.FromRgb(0xA1, 0x88, 0x7F),
             DictionaryFileName = "TeaDark.xaml",
             SystemAccent = Color.FromRgb(0xA1, 0x88, 0x7F),

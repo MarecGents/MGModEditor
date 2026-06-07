@@ -1,4 +1,4 @@
-﻿<!--
+<!--
     This Source Code Form is subject to the terms of the MIT License.
     If a copy of the MIT was not distributed with this file, You can obtain one at https://opensource.org/licenses/MIT.
     Copyright (C) Leszek Pomianowski and WPF UI Contributors.
@@ -114,9 +114,9 @@
     <Color x:Key="LayerOnMicaBaseAltFillColorTransparent">#001A0E0A</Color>
 
     <Color x:Key="SolidBackgroundFillColorBase">#FF261814</Color>
-    <Color x:Key="SolidBackgroundFillColorSecondary">#FF1A0E0A</Color>
+    <Color x:Key="SolidBackgroundFillColorSecondary">#FF291A17</Color>
     <Color x:Key="SolidBackgroundFillColorTertiary">#FF30201E</Color>
-    <Color x:Key="SolidBackgroundFillColorQuarternary">#FF30201E</Color>
+    <Color x:Key="SolidBackgroundFillColorQuarternary">#FF322120</Color>
     <Color x:Key="SolidBackgroundFillColorTransparent">#001A0E0A</Color>
     <Color x:Key="SolidBackgroundFillColorBaseAlt">#FF261814</Color>
 

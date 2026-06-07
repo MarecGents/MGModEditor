@@ -36,7 +36,7 @@ public static class CustomThemeService
         var overlayDict = new ResourceDictionary
         {
             Source = new Uri(
-                $"pack://application:,,,/Wpf.Ui.Gallery;component/Theme/{config.DictionaryFileName}",
+                $"pack://application:,,,/MGEditor;component/Theme/{config.DictionaryFileName}",
                 UriKind.Absolute)
         };
         Application.Current.Resources.MergedDictionaries.Add(overlayDict);
@@ -72,7 +72,7 @@ public static class CustomThemeService
 
         var toRemove = Application.Current.Resources.MergedDictionaries
             .Where(d => d.Source?.ToString()
-                .Contains("Wpf.Ui.Gallery", StringComparison.OrdinalIgnoreCase) == true
+                .Contains("MGEditor", StringComparison.OrdinalIgnoreCase) == true
                      && d.Source?.ToString()
                 .Contains("/Theme/", StringComparison.OrdinalIgnoreCase) == true)
             .ToList();

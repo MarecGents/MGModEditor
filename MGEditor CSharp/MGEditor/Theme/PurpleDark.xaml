@@ -114,7 +114,7 @@
     <Color x:Key="LayerOnMicaBaseAltFillColorTransparent">#00FFFFFF</Color>
 
     <Color x:Key="SolidBackgroundFillColorBase">#202020</Color>
-    <Color x:Key="SolidBackgroundFillColorSecondary">#FF241830</Color>
+    <Color x:Key="SolidBackgroundFillColorSecondary">#FF222222</Color>
     <Color x:Key="SolidBackgroundFillColorTertiary">#282828</Color>
     <Color x:Key="SolidBackgroundFillColorQuarternary">#2C2C2C</Color>
     <Color x:Key="SolidBackgroundFillColorTransparent">#00202020</Color>

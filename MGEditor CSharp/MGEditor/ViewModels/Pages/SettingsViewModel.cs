@@ -47,42 +47,46 @@ public partial class SettingsViewModel : ViewModel
     {
         if (String.IsNullOrEmpty(value))
             return;
-
         if (value == "Light")
         {
-            ApplicationThemeManager.Apply(
-                ApplicationTheme.Light,
-                WindowBackdropType.Auto);
+            CustomThemeService.Remove();
+            ApplicationThemeManager.Apply(ApplicationTheme.Light, WindowBackdropType.None, false);
         }
         else if (value == "Dark")
         {
-            ApplicationThemeManager.Apply(
-                ApplicationTheme.Dark,
-                WindowBackdropType.Auto);
-        }
-        else if (value == "Unknown")
-        {
-            ApplicationThemeManager.Apply(
-                ApplicationTheme.Unknown,
-                WindowBackdropType.Auto);
+            CustomThemeService.Remove();
+            ApplicationThemeManager.Apply(ApplicationTheme.Dark, WindowBackdropType.None, false);
         }
         else if (value == "HighContrast")
         {
-            ApplicationThemeManager.Apply(
-                ApplicationTheme.HighContrast,
-                WindowBackdropType.Auto);
+            CustomThemeService.Remove();
+            ApplicationThemeManager.Apply(ApplicationTheme.HighContrast, WindowBackdropType.None, false);
         }
-
+        else
+        {
+            CustomThemeService.Apply(value);
+        }
         AppSettingService1.EditorSetting.Personalized.Theme = value;
     }
 
-    public List<KeyValue> ThemeValueList { get; } = new()
+    public List<KeyValue> ThemeValueList { get; set; } = GetThemeValueList();
+
+    private static List<KeyValue> GetThemeValueList()
     {
-        new KeyValue { Key = "Light", Value = "浅色" },
-        new KeyValue { Key = "Dark", Value = "深色" },
-        new KeyValue { Key = "HighContrast", Value = "高对比度" },
-        new KeyValue { Key = "Unknown", Value = "未知" },
-    };
+        List<KeyValue> themeValueList = new()
+        {
+            new KeyValue { Key = "Light", Value = "浅色" },
+            new KeyValue { Key = "Dark", Value = "深色" },
+            new KeyValue { Key = "HighContrast", Value = "高对比度" },
+        };
+        foreach (var themeConfig in CustomThemeRegistry.AllThemes)
+        {
+            themeValueList.Add(
+                new KeyValue { Key = themeConfig.Key, Value = themeConfig.DisplayName }
+                );
+        }
+        return themeValueList;
+    }
     
     [ObservableProperty]
     private string _appVersion;
