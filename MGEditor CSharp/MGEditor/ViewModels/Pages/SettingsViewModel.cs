@@ -1,4 +1,4 @@
-﻿using MGEditor.Resources;
+using MGEditor.Resources;
 using MGEditor.Services;
 
 namespace MGEditor.ViewModels.Pages;
