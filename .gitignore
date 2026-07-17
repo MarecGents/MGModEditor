@@ -52,3 +52,22 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# IDE and tool folders
+.idea/
+/.vs/
+.codegraph/
+.reasonix/
+.vscode/
+
+# IDE user settings
+*.DotSettings.user
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
