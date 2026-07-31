@@ -195,12 +195,6 @@
                 <controls:CheckButtonFrame
                     ButtonContent="任务优化"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.QuestSystem.QuestOptimize}"/>
-                <controls:CheckButtonFrame
-                    ButtonContent="任务修复"
-                    IsChecked="{Binding ViewModel.ConfigJson.Templates.QuestSystem.QuestFix}"/>
-                <controls:CheckButtonFrame
-                    ButtonContent="任务分类"
-                    IsChecked="{Binding ViewModel.ConfigJson.Templates.QuestSystem.QuestClassify}"/>
             </StackPanel>
         </controls:FrameGroup>
         

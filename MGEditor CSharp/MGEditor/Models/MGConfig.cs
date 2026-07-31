@@ -228,8 +228,6 @@ public class MGModConfig_Templates_EquipmentPlate
 public class MGModConfig_Templates_QuestSystem
 {
     public bool QuestOptimize { get; set; }
-    public bool QuestFix { get; set; }
-    public bool QuestClassify { get; set; }
 }
 public class MGModConfig_Traders
 {

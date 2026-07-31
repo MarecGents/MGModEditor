@@ -428,8 +428,7 @@
         "ResetFree": true,
         "QuestSystem": {
             "QuestOptimize": false,
-            "QuestFix": false,
-            "QuestClassify": false
+            "QuestFix": false
         }
     },
     "Traders": {
