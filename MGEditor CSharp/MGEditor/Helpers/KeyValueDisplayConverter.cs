@@ -13,9 +13,15 @@ internal sealed class KeyValueDisplayConverter : IMultiValueConverter
 {
     public object Convert(object[] values, Type targetType, object? parameter, CultureInfo culture)
     {
-        if (values.Length == 0 || values[0] is not KeyValue item)
+        if (values.Length == 0 || values[0] is null)
         {
             return string.Empty;
+        }
+
+        if (values[0] is not KeyValue item)
+        {
+            // 非 KeyValue 项兜底直显（防御未来误用导致空白）
+            return values[0].ToString() ?? string.Empty;
         }
 
         var translation = TranslationService.Instance;

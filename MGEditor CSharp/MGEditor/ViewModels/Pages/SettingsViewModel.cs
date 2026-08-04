@@ -94,14 +94,12 @@ public partial class SettingsViewModel : ViewModel
         return themeValueList;
     }
 
-    public record LanguageItem(string Value, string Display);
-
-    /// <summary>语言下拉项（显示各语言自称，不经过翻译，避免语言选择依赖翻译）。</summary>
-    public List<LanguageItem> LanguageValueList { get; } = new()
+    /// <summary>语言下拉项（显示各语言自称，不经过翻译，避免语言选择依赖翻译；走 KeyValue 直显）。</summary>
+    public List<KeyValue> LanguageValueList { get; } = new()
     {
-        new("zh-CN", "简体中文"),
-        new("en-US", "English"),
-        new("ru-RU", "Русский"),
+        new KeyValue { Key = "zh-CN", Value = "简体中文" },
+        new KeyValue { Key = "en-US", Value = "English" },
+        new KeyValue { Key = "ru-RU", Value = "Русский" },
     };
 
     [ObservableProperty]
