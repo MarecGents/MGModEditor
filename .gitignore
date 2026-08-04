@@ -71,3 +71,6 @@ nunit-*.xml
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Visual Studio IDE
+.vs/
