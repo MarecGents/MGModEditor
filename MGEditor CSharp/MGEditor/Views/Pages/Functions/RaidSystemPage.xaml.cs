@@ -1,10 +1,11 @@
-﻿using MGEditor.ControlsLookup;
+using MGEditor.ControlsLookup;
+using MGEditor.Resources;
 using MGEditor.ViewModels.Pages.Functions;
 
 namespace MGEditor.Views.Pages.Functions;
 
 [GalleryPage(
-    "战局系统中包含：AI系统、进入战局默认选项、战局参数、资源倍率等功能。", 
+    Translations.GalleryDescRaid, 
     SymbolRegular.PersonWalking16
     )]
 public partial class RaidSystemPage : INavigableView<RaidSystemViewModel>
@@ -17,3 +18,4 @@ public partial class RaidSystemPage : INavigableView<RaidSystemViewModel>
         InitializeComponent();
     }
 }
+

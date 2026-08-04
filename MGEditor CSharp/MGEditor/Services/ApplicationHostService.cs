@@ -13,15 +13,18 @@ namespace MGEditor.Services
         private INavigationWindow _navigationWindow;
         private MGConfigService _mGConfigService;
         private AppSettingService  _appSettingService;
+        private TranslationService _translationService;
 
         public ApplicationHostService(
             IServiceProvider serviceProvider, 
             MGConfigService mGConfigService,
-            AppSettingService appSettingService)
+            AppSettingService appSettingService,
+            TranslationService translationService)
         {
             _serviceProvider = serviceProvider;
             _mGConfigService = mGConfigService;
             _appSettingService = appSettingService;
+            _translationService = translationService;
         }
 
         /// <summary>
@@ -33,6 +36,8 @@ namespace MGEditor.Services
             _mGConfigService.LoadConfig();
             _appSettingService.LoadSetting();
             _appSettingService.ApplySettings();
+            TranslationService.Instance = _translationService;
+            _translationService.ResolveAndLoad(_appSettingService.EditorSetting.Personalized?.Language);
             await HandleActivationAsync();
         }
 

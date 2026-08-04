@@ -1,4 +1,4 @@
-﻿<ui:FluentWindow
+<ui:FluentWindow
     x:Class="MGEditor.Views.Windows.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -63,7 +63,7 @@
                 <ui:BreadcrumbBar x:Name="BreadcrumbBar" Margin="42,32,42,20" />
             </ui:NavigationView.Header>
             <ui:NavigationView.AutoSuggestBox>
-                <ui:AutoSuggestBox x:Name="AutoSuggestBox" PlaceholderText="Search">
+                <ui:AutoSuggestBox x:Name="AutoSuggestBox" PlaceholderText="{DynamicResource Common.Search}">
                     <ui:AutoSuggestBox.Icon>
                         <ui:IconSourceElement>
                             <ui:SymbolIconSource Symbol="Search24" />
@@ -81,3 +81,4 @@
         <ContentPresenter x:Name="RootContentDialog" Grid.Row="0" />
     </Grid>
 </ui:FluentWindow>
+

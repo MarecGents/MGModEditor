@@ -13,8 +13,8 @@ public sealed record CustomThemeConfig
     /// <summary>Unique identifier, e.g. "PurpleLight".</summary>
     public required string Key { get; init; }
 
-    /// <summary>Display name shown in ComboBox.</summary>
-    public required string DisplayName { get; init; }
+    /// <summary>Translation key of the display name shown in ComboBox.</summary>
+    public required string DisplayNameKey { get; init; }
 
     /// <summary>Color of the indicator dot in ComboBox.</summary>
     public required System.Windows.Media.Color IndicatorColor { get; init; }

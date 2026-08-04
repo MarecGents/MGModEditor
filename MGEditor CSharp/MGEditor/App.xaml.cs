@@ -43,6 +43,7 @@ namespace MGEditor
 
                 _ = services.AddSingleton<MGConfigService>();
 				_ = services.AddSingleton<AppSettingService>();
+				_ = services.AddSingleton<TranslationService>();
 
 				// Main window with navigation
 				_ = services.AddSingleton<INavigationWindow, MainWindow>();

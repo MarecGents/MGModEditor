@@ -2,7 +2,11 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"           
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        
     xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
-    xmlns:controls="clr-namespace:MGEditor.Controls">
+    xmlns:controls="clr-namespace:MGEditor.Controls"
+    xmlns:helpers="clr-namespace:MGEditor.Helpers"
+    xmlns:services="clr-namespace:MGEditor.Services">
+
+    <helpers:KeyValueDisplayConverter x:Key="KeyValueDisplayConverter" />
 
     <Style TargetType="{x:Type controls:ComboxFrame}">
         <Setter Property="Focusable" Value="False" />
@@ -36,13 +40,24 @@
                                     Grid.Column="1"
                                     ItemsSource="{Binding ItemsSource, RelativeSource={RelativeSource AncestorType={x:Type controls:ComboxFrame}}}"
                                     SelectedValue="{Binding SelectedValue, RelativeSource={RelativeSource AncestorType={x:Type controls:ComboxFrame}}}"
-                                    DisplayMemberPath="Value"
                                     SelectedValuePath="Key"
                                     Margin="0,0,20,0"
                                     HorizontalAlignment="Right"
                                     VerticalAlignment="Center"
-                                    MinWidth="150"
-                                    />
+                                    MinWidth="150">
+                                    <ComboBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <TextBlock>
+                                                <TextBlock.Text>
+                                                    <MultiBinding Converter="{StaticResource KeyValueDisplayConverter}">
+                                                        <Binding />
+                                                        <Binding Path="CurrentLanguage" Source="{x:Static services:TranslationService.Instance}" />
+                                                    </MultiBinding>
+                                                </TextBlock.Text>
+                                            </TextBlock>
+                                        </DataTemplate>
+                                    </ComboBox.ItemTemplate>
+                                </ComboBox>
                             </Grid>
                         </Border>
                     </Grid>

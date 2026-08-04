@@ -1,4 +1,4 @@
-﻿<Page 
+<Page 
     x:Class="MGEditor.Views.Pages.Functions.DevelopSystemPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -8,7 +8,7 @@
     xmlns:system="clr-namespace:System;assembly=System.Runtime"
     xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
     xmlns:controls="clr-namespace:MGEditor.Controls"
-    Title="养成系统"
+    Title="{DynamicResource Nav.Develop}"
     d:DataContext="{d:DesignInstance local:DevelopSystemPage,
                                 IsDesignTimeCreatable=False}"
     d:DesignHeight="1200" 
@@ -19,218 +19,218 @@
     mc:Ignorable="d" >
     <StackPanel>
         <controls:FrameGroup
-            HeaderText="基础属性">
+            HeaderText="{DynamicResource Develop.Header.BaseAttributes}">
             <StackPanel>
                 <controls:ComboxFrame 
-                    ButtonContent="装卸速度"
+                    ButtonContent="{DynamicResource Develop.Button.UnloadSpeed}"
                     ItemsSource="{Binding ViewModel.ConfigItemList.LoadSpeed}"
                     SelectedValue="{Binding ViewModel.LoadSpeedValue}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="技能经验优化"
+                    ButtonContent="{DynamicResource Develop.Button.SkillExpBoost}"
                     IsChecked="{Binding ViewModel.ConfigJson.Globals.ExpOptimize}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="超人模式"
+                    ButtonContent="{DynamicResource Develop.Button.SupermanMode}"
                     IsChecked="{Binding ViewModel.ConfigJson.Globals.SuperHero}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="去除携带限制"
+                    ButtonContent="{DynamicResource Develop.Button.NoCarryLimit}"
                     IsChecked="{Binding ViewModel.ConfigJson.Globals.TakeLimit}"/>
             </StackPanel>
         </controls:FrameGroup>
 
         <controls:FrameGroup
-            HeaderText="装备优化-武器">
+            HeaderText="{DynamicResource Develop.Header.WeaponOpt}">
             <StackPanel>
                 <controls:CheckButtonFrame
-                    ButtonContent="武器栏兼容"
+                    ButtonContent="{DynamicResource Develop.Button.WeaponSlotCompat}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.WeaponFilter}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="武器无故障"
+                    ButtonContent="{DynamicResource Develop.Button.WeaponNoJam}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.WeaponNoLost}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="武器维修无损耗"
+                    ButtonContent="{DynamicResource Develop.Button.WeaponNoDurabilityLoss}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.WeaponRepairPerfect}"/>
                 <controls:ComboxFrame 
-                    ButtonContent="弹匣容量"
+                    ButtonContent="{DynamicResource Develop.Button.MagazineCapacity}"
                     ItemsSource="{Binding ViewModel.ConfigItemList.MagazineCapacity}"
                     SelectedValue="{Binding ViewModel.ConfigJson.Templates.MagazineCapacity}"/>
             </StackPanel>
         </controls:FrameGroup>
         
         <controls:FrameGroup
-            HeaderText="装备优化-头盔">
+            HeaderText="{DynamicResource Develop.Header.HelmetOpt}">
             <StackPanel>
                 <controls:CheckButtonFrame
-                    ButtonContent="头盔兼容头戴式装备"
+                    ButtonContent="{DynamicResource Develop.Button.HelmetHeadsetCompat}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.Helmet.Filter}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="头盔去除负面BUFF"
+                    ButtonContent="{DynamicResource Develop.Button.HelmetNoDebuff}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.Helmet.NoBuff}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="头盔无负重"
+                    ButtonContent="{DynamicResource Develop.Button.HelmetNoWeight}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.Helmet.NoWeight}"/>
 
             </StackPanel>
         </controls:FrameGroup>
         
         <controls:FrameGroup
-            HeaderText="装备优化-弹挂护甲">
+            HeaderText="{DynamicResource Develop.Header.RigArmorOpt}">
             <StackPanel>
                 <controls:CheckButtonFrame
-                    ButtonContent="弹挂护甲兼容"
+                    ButtonContent="{DynamicResource Develop.Button.RigArmorCompat}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.Armor.Filter}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="弹挂护甲去除负面BUFF"
+                    ButtonContent="{DynamicResource Develop.Button.RigArmorNoDebuff}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.Armor.NoBuff}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="弹挂护甲无负重"
+                    ButtonContent="{DynamicResource Develop.Button.RigArmorNoWeight}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.Armor.NoWeight}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="弹挂护甲维修无损耗"
+                    ButtonContent="{DynamicResource Develop.Button.RigArmorNoDurabilityLoss}"
                     IsChecked="{Binding ViewModel.ConfigJson.Globals.ArmorRepairPerfect}"/>
 
             </StackPanel>
         </controls:FrameGroup>
         
         <controls:FrameGroup
-            HeaderText="装备优化-插板内衬">
+            HeaderText="{DynamicResource Develop.Header.PlateCarrierOpt}">
             <StackPanel>
                 <controls:ComboxFrame
-                    ButtonContent="插板内衬耐久"
+                    ButtonContent="{DynamicResource Develop.Button.PlateCarrierDurability}"
                     ItemsSource="{Binding ViewModel.ConfigItemList.ItemsDurability}"
                     SelectedValue="{Binding ViewModel.ConfigJson.Templates.EquipmentPlate.Durability}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="插板内衬去除负面BUFF"
+                    ButtonContent="{DynamicResource Develop.Button.PlateCarrierNoDebuff}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.EquipmentPlate.NoBuff}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="插板内衬无负重"
+                    ButtonContent="{DynamicResource Develop.Button.PlateCarrierNoWeight}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.EquipmentPlate.NoWeight}"/>
             </StackPanel>
         </controls:FrameGroup>
         
         <controls:FrameGroup
-            HeaderText="装备优化-背包">
+            HeaderText="{DynamicResource Develop.Header.BackpackOpt}">
             <StackPanel>
                 <controls:CheckButtonFrame
-                    ButtonContent="背包兼容物品"
+                    ButtonContent="{DynamicResource Develop.Button.BackpackCompat}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.Backpack.Filter}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="背包缩小体积"
+                    ButtonContent="{DynamicResource Develop.Button.BackpackCompact}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.Backpack.SmallSize}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="背包去除负面BUFF"
+                    ButtonContent="{DynamicResource Develop.Button.BackpackNoDebuff}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.Backpack.NoBuff}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="背包无负重"
+                    ButtonContent="{DynamicResource Develop.Button.BackpackNoWeight}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.Backpack.NoWeight}"/>
                 
             </StackPanel>
         </controls:FrameGroup>
         
         <controls:FrameGroup
-            HeaderText="装备优化-附魔">
+            HeaderText="{DynamicResource Develop.Header.EnchantOpt}">
             <StackPanel>
                 <controls:CheckButtonFrame
-                    ButtonContent="武器附魔100%"
+                    ButtonContent="{DynamicResource Develop.Button.WeaponEnchant100}"
                     IsChecked="{Binding ViewModel.BuffsWeaponValue}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="护甲附魔100%"
+                    ButtonContent="{DynamicResource Develop.Button.ArmorEnchant100}"
                     IsChecked="{Binding ViewModel.BuffsArmorValue}"/>
             </StackPanel>
         </controls:FrameGroup>
         
         <controls:FrameGroup
-            HeaderText="装备优化-保险">
+            HeaderText="{DynamicResource Develop.Header.InsuranceOpt}">
             <StackPanel>
                 <controls:CheckButtonFrame
-                    ButtonContent="保险扩容"
+                    ButtonContent="{DynamicResource Develop.Button.InsuranceExpand}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.Safes.SizeExpand}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="保险兼容物品"
+                    ButtonContent="{DynamicResource Develop.Button.InsuranceCompat}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.Safes.Filter}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="保险无负重"
+                    ButtonContent="{DynamicResource Develop.Button.InsuranceNoWeight}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.Safes.NoWeight}"/>
             </StackPanel>
         </controls:FrameGroup>
         
         <controls:FrameGroup
-            HeaderText="装备优化-物品属性">
+            HeaderText="{DynamicResource Develop.Header.ItemAttrOpt}">
             <StackPanel>
                 <controls:CheckButtonFrame
-                    ButtonContent="T7/热成像优化"
+                    ButtonContent="{DynamicResource Develop.Button.T7ThermalBoost}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.T7ThermalImaging}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="钥匙无限耐久"
+                    ButtonContent="{DynamicResource Develop.Button.KeyUnlimitedDurability}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.KeysDurability}"/>
                 <controls:ComboxFrame 
-                    ButtonContent="医疗物品耐久"
+                    ButtonContent="{DynamicResource Develop.Button.MedicalItemDurability}"
                     ItemsSource="{Binding ViewModel.ConfigItemList.ItemsDurability}"
                     SelectedValue="{Binding ViewModel.ConfigJson.Templates.MedcDurability}"/>
             </StackPanel>
         </controls:FrameGroup>
         
         <controls:FrameGroup
-            HeaderText="仓库优化">
+            HeaderText="{DynamicResource Develop.Header.WarehouseOpt}">
             <StackPanel>
                 <controls:ComboxFrame 
-                    ButtonContent="子弹堆叠调整"
+                    ButtonContent="{DynamicResource Develop.Button.AmmoStack}"
                     ItemsSource="{Binding ViewModel.ConfigItemList.AmmoStack}"
                     SelectedValue="{Binding ViewModel.ConfigJson.Templates.AmmoStack}"/>
                 <controls:ComboxFrame 
-                    ButtonContent="钱堆叠调整"
+                    ButtonContent="{DynamicResource Develop.Button.MoneyStack}"
                     ItemsSource="{Binding ViewModel.ConfigItemList.MoneyStack}"
                     SelectedValue="{Binding ViewModel.ConfigJson.Templates.MoneyStack}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="物品全检视"
+                    ButtonContent="{DynamicResource Develop.Button.FullInspect}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.Examined}"/>
             </StackPanel>
         </controls:FrameGroup>
         
         <controls:FrameGroup
-            HeaderText="任务系统">
+            HeaderText="{DynamicResource Develop.Header.QuestSystem}">
             <StackPanel>
                 <controls:CheckButtonFrame
-                    ButtonContent="任务免费重置"
+                    ButtonContent="{DynamicResource Develop.Button.QuestFreeReset}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.ResetFree}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="任务优化"
+                    ButtonContent="{DynamicResource Develop.Button.QuestOptimize}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.QuestSystem.QuestOptimize}"/>
             </StackPanel>
         </controls:FrameGroup>
         
         <controls:FrameGroup
-            HeaderText="藏身处">
+            HeaderText="{DynamicResource Develop.Header.Hideout}">
             <StackPanel>
                 <controls:ComboxFrame 
-                    ButtonContent="藏身处升级时间"
+                    ButtonContent="{DynamicResource Develop.Button.HideoutUpgradeTime}"
                     ItemsSource="{Binding ViewModel.ConfigItemList.HideoutTime}"
                     SelectedValue="{Binding ViewModel.BuildTimeValue}"/>
                 <controls:ComboxFrame 
-                    ButtonContent="藏身处生产时间"
+                    ButtonContent="{DynamicResource Develop.Button.HideoutProductionTime}"
                     ItemsSource="{Binding ViewModel.ConfigItemList.HideoutTime}"
                     SelectedValue="{Binding ViewModel.ProductTimeValue}"/>
                 <controls:ComboxFrame 
-                    ButtonContent="Scav宝箱时间"
+                    ButtonContent="{DynamicResource Develop.Button.ScavCaseTime}"
                     ItemsSource="{Binding ViewModel.ConfigItemList.HideoutTime}"
                     SelectedValue="{Binding ViewModel.ScavCaseTimeValue}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="藏身处升级无限制"
+                    ButtonContent="{DynamicResource Develop.Button.HideoutUpgradeUnlimited}"
                     IsChecked="{Binding ViewModel.ConfigJson.Hideout.UpgradeNoLimit}"/>
                 <controls:ComboxFrame 
-                    ButtonContent="藏身处区域加成等级"
+                    ButtonContent="{DynamicResource Develop.Button.HideoutAreaBonusLevel}"
                     ItemsSource="{Binding ViewModel.ConfigItemList.BonusesLevel}"
                     SelectedValue="{Binding ViewModel.BonusesLevelValue}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="藏身处区域无需供电"
+                    ButtonContent="{DynamicResource Develop.Button.HideoutNoPower}"
                     IsChecked="{Binding ViewModel.ConfigJson.Hideout.NoNeedsFuel}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="健身房锻炼百分百成功"
+                    ButtonContent="{DynamicResource Develop.Button.GymAlwaysSucceed}"
                     IsChecked="{Binding ViewModel.ConfigJson.Hideout.Qte.Sucess100}"/>
                 <controls:CheckButtonFrame
-                    ButtonContent="健身房锻炼无惩罚"
+                    ButtonContent="{DynamicResource Develop.Button.GymNoPenalty}"
                     IsChecked="{Binding ViewModel.ConfigJson.Hideout.Qte.NoPunish}"/>
                 <controls:ComboxFrame 
-                    ButtonContent="健身房锻炼奖励倍率"
+                    ButtonContent="{DynamicResource Develop.Button.GymRewardMultiplier}"
                     ItemsSource="{Binding ViewModel.ConfigItemList.RewardMultiple}"
                     SelectedValue="{Binding ViewModel.RewardMultipleValue}"/>
             </StackPanel>
@@ -238,3 +238,4 @@
         
     </StackPanel>
 </Page>
+

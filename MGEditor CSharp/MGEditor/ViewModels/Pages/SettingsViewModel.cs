@@ -10,9 +10,14 @@ public partial class SettingsViewModel : ViewModel
     [ObservableProperty]
     private AppSettingService _appSettingService1;
 
-    public SettingsViewModel(AppSettingService appSettingService)
+    private readonly TranslationService _translationService;
+
+    public SettingsViewModel(
+        AppSettingService appSettingService,
+        TranslationService translationService)
     {
         AppSettingService1 = appSettingService;
+        _translationService = translationService;
     }
 
 	public override void OnNavigatedTo()
@@ -31,6 +36,7 @@ public partial class SettingsViewModel : ViewModel
     private void SettingValueInit()
     {
         ThemeTypeValue = AppSettingService1.EditorSetting.Personalized.Theme;
+        LanguageValue = AppSettingService1.EditorSetting.Personalized.Language ?? _translationService.CurrentLanguage;
         AppVersion = $"MGEditor - {GetAssemblyVersion()}";
     }
 
@@ -75,19 +81,43 @@ public partial class SettingsViewModel : ViewModel
     {
         List<KeyValue> themeValueList = new()
         {
-            new KeyValue { Key = "Light", Value = "浅色" },
-            new KeyValue { Key = "Dark", Value = "深色" },
-            new KeyValue { Key = "HighContrast", Value = "高对比度" },
+            new KeyValue { Key = "Light", ValueKey = Translations.SettingsThemeLight },
+            new KeyValue { Key = "Dark", ValueKey = Translations.SettingsThemeDark },
+            new KeyValue { Key = "HighContrast", ValueKey = Translations.SettingsThemeHighContrast },
         };
         foreach (var themeConfig in CustomThemeRegistry.AllThemes)
         {
             themeValueList.Add(
-                new KeyValue { Key = themeConfig.Key, Value = themeConfig.DisplayName }
+                new KeyValue { Key = themeConfig.Key, ValueKey = themeConfig.DisplayNameKey }
                 );
         }
         return themeValueList;
     }
-    
+
+    public record LanguageItem(string Value, string Display);
+
+    /// <summary>语言下拉项（显示各语言自称，不经过翻译，避免语言选择依赖翻译）。</summary>
+    public List<LanguageItem> LanguageValueList { get; } = new()
+    {
+        new("zh-CN", "简体中文"),
+        new("en-US", "English"),
+        new("ru-RU", "Русский"),
+    };
+
+    [ObservableProperty]
+    private string _languageValue;
+
+    partial void OnLanguageValueChanged(string value)
+    {
+        if (String.IsNullOrEmpty(value))
+            return;
+        // 立即热切换
+        _translationService.Load(value);
+        // 持久化
+        AppSettingService1.EditorSetting.Personalized.Language = value;
+        AppSettingService1.SaveSetting();
+    }
+
     [ObservableProperty]
     private string _appVersion;
 

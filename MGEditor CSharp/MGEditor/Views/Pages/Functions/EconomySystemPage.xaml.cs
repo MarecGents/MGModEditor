@@ -1,10 +1,11 @@
-﻿using MGEditor.ControlsLookup;
+using MGEditor.ControlsLookup;
+using MGEditor.Resources;
 using MGEditor.ViewModels.Pages.Functions;
 
 namespace MGEditor.Views.Pages.Functions;
 
 [GalleryPage(
-    "经济系统中包含：跳蚤市场各项优化、商人交易系统等功能。", 
+    Translations.GalleryDescEconomy, 
     SymbolRegular.CurrencyDollarEuro16
     )]
 public partial class EconomySystemPage : INavigableView<EconomySystemViewModel>
@@ -18,3 +19,4 @@ public partial class EconomySystemPage : INavigableView<EconomySystemViewModel>
         InitializeComponent();
     }
 }
+

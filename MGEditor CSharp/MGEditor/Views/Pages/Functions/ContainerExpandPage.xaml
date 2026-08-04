@@ -1,4 +1,4 @@
-﻿<Page 
+<Page 
     x:Class="MGEditor.Views.Pages.Functions.ContainerExpandPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -8,7 +8,7 @@
     xmlns:system="clr-namespace:System;assembly=System.Runtime"
     xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
     xmlns:controls="clr-namespace:MGEditor.Controls"
-    Title="容器扩容"
+    Title="{DynamicResource Nav.Container}"
     d:DataContext="{d:DesignInstance local:ContainerExpandPage,
                                 IsDesignTimeCreatable=False}"
     d:DesignHeight="1200" 
@@ -89,3 +89,4 @@
             ContainerExpand="{Binding ViewModel.ConfigJson.Templates.ContainerExpand}"/>
     </StackPanel>
 </Page>
+

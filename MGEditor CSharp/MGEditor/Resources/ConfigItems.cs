@@ -1,4 +1,4 @@
-﻿namespace MGEditor.Resources;
+namespace MGEditor.Resources;
 
 public class ConfigItems
 {
@@ -25,7 +25,7 @@ public class ConfigItems
     };
     public List<KeyValue> USECRate { get; } = (new()
     {
-        new KeyValue{ Key=-1, Value="默认比例" },
+        new KeyValue{ Key=-1, ValueKey=Translations.ConfigItemDefaultRatio },
         new KeyValue{ Key=0, Value="0%" },
         new KeyValue{ Key=10, Value="10%" },
         new KeyValue{ Key=20, Value="20%" },
@@ -41,38 +41,38 @@ public class ConfigItems
 
     public List<KeyValue> aiAmount { get; } = new()
     {
-        new KeyValue{ Key="AsOnline", Value="同在线" },
-        new KeyValue{ Key="NoBots", Value="无" },
-        new KeyValue{ Key="Low", Value="低" },
-        new KeyValue{ Key="Medium", Value="中" },
-        new KeyValue{ Key="High", Value="高" },
-        new KeyValue{ Key="Horde", Value="排山倒海" },
+        new KeyValue{ Key="AsOnline", ValueKey=Translations.ConfigItemAiAmountAsOnline },
+        new KeyValue{ Key="NoBots", ValueKey=Translations.ConfigItemAiAmountNoBots },
+        new KeyValue{ Key="Low", ValueKey=Translations.ConfigItemAiAmountLow },
+        new KeyValue{ Key="Medium", ValueKey=Translations.ConfigItemAiAmountMedium },
+        new KeyValue{ Key="High", ValueKey=Translations.ConfigItemAiAmountHigh },
+        new KeyValue{ Key="Horde", ValueKey=Translations.ConfigItemAiAmountHorde },
     };
 
     public List<KeyValue> aiDifficulty { get; } = new()
     {
-        new KeyValue{ Key="AsOnline", Value="同在线" },
-        new KeyValue{ Key="Easy", Value="简单" },
-        new KeyValue{ Key="Medium", Value="中等" },
-        new KeyValue{ Key="Hard", Value="困难" },
-        new KeyValue{ Key="Impossible", Value="地狱" },
-        new KeyValue{ Key="Random", Value="随机" },
+        new KeyValue{ Key="AsOnline", ValueKey=Translations.ConfigItemAiDifficultyAsOnline },
+        new KeyValue{ Key="Easy", ValueKey=Translations.ConfigItemAiDifficultyEasy },
+        new KeyValue{ Key="Medium", ValueKey=Translations.ConfigItemAiDifficultyMedium },
+        new KeyValue{ Key="Hard", ValueKey=Translations.ConfigItemAiDifficultyHard },
+        new KeyValue{ Key="Impossible", ValueKey=Translations.ConfigItemAiDifficultyImpossible },
+        new KeyValue{ Key="Random", ValueKey=Translations.ConfigItemAiDifficultyRandom },
     };
 
     public List<KeyValue> RaidTime { get; } = new()
     {
-        new KeyValue{ Key=-1.0, Value="默认时长" },
-        new KeyValue{ Key=30.0, Value="30分钟" },
-        new KeyValue{ Key=60.0, Value="1.0小时" },
-        new KeyValue{ Key=90.0, Value="1.5小时" },
-        new KeyValue{ Key=120.0, Value="2.0小时" },
-        new KeyValue{ Key=180.0, Value="3.0小时" },
-        new KeyValue{ Key=240.0, Value="4.0小时" },
+        new KeyValue{ Key=-1.0, ValueKey=Translations.ConfigItemRaidTimeDefault },
+        new KeyValue{ Key=30.0, ValueKey=Translations.ConfigItemRaidTime30m },
+        new KeyValue{ Key=60.0, ValueKey=Translations.ConfigItemRaidTime1h },
+        new KeyValue{ Key=90.0, ValueKey=Translations.ConfigItemRaidTime1h30 },
+        new KeyValue{ Key=120.0, ValueKey=Translations.ConfigItemRaidTime2h },
+        new KeyValue{ Key=180.0, ValueKey=Translations.ConfigItemRaidTime3h },
+        new KeyValue{ Key=240.0, ValueKey=Translations.ConfigItemRaidTime4h },
     };
 
     public List<KeyValue> BOSSSpwanChance { get; } = new()
     {
-        new KeyValue{ Key=-1.0, Value="默认概率"},
+        new KeyValue{ Key=-1.0, ValueKey=Translations.ConfigItemBossSpawnChanceDefault },
         new KeyValue{ Key=0.0, Value="0%"},
         new KeyValue{ Key=10.0, Value="10%"},
         new KeyValue{ Key=20.0, Value="20%"},
@@ -86,31 +86,31 @@ public class ConfigItems
         new KeyValue{ Key=100.0, Value="100%"},
     };
     public List<KeyValue> AirdropType { get; } = new() {
-        new KeyValue{ Key="default", Value="默认"},
-        new KeyValue{ Key="moreWeapon", Value="多武器" },
-        new KeyValue{ Key="moreBarter", Value="多交换物品"},
-        new KeyValue{ Key="moreFoodMedical", Value="吃喝医疗"},
-        new KeyValue{ Key="moreMixed", Value="混合种类"},
+        new KeyValue{ Key="default", ValueKey=Translations.ConfigItemAirdropTypeDefault },
+        new KeyValue{ Key="moreWeapon", ValueKey=Translations.ConfigItemAirdropTypeMoreWeapon },
+        new KeyValue{ Key="moreBarter", ValueKey=Translations.ConfigItemAirdropTypeMoreBarter },
+        new KeyValue{ Key="moreFoodMedical", ValueKey=Translations.ConfigItemAirdropTypeMoreFoodMedical },
+        new KeyValue{ Key="moreMixed", ValueKey=Translations.ConfigItemAirdropTypeMoreMixed },
     };
     
     public List<KeyValue> WeatherMode { get; } = new()
     {
-        new KeyValue{ Key="default", Value="默认天气" },
-        new KeyValue{ Key="mode1", Value="晴空万里" },
-        new KeyValue{ Key="mode2", Value="阴雨连绵" },
-        new KeyValue{ Key="mode3", Value="狂风暴雨" },
-        new KeyValue{ Key="mode4", Value="云雾缭绕" },
-        new KeyValue{ Key="mode5", Value="究极变态天气" },
-        new KeyValue{ Key="Custom", Value="自定义" },
+        new KeyValue{ Key="default", ValueKey=Translations.ConfigItemWeatherModeDefault },
+        new KeyValue{ Key="mode1", ValueKey=Translations.ConfigItemWeatherModeClear },
+        new KeyValue{ Key="mode2", ValueKey=Translations.ConfigItemWeatherModeRainy },
+        new KeyValue{ Key="mode3", ValueKey=Translations.ConfigItemWeatherModeStorm },
+        new KeyValue{ Key="mode4", ValueKey=Translations.ConfigItemWeatherModeMisty },
+        new KeyValue{ Key="mode5", ValueKey=Translations.ConfigItemWeatherModeExtreme },
+        new KeyValue{ Key="Custom", ValueKey=Translations.ConfigItemWeatherModeCustom },
     };
 
     public List<KeyValue> CloudMode { get; } = new()
     {
-        new KeyValue{ Key="default", Value="默认" },
-        new KeyValue{ Key="mode1", Value="万里无云" },
-        new KeyValue{ Key="mode2", Value="少云" },
-        new KeyValue{ Key="mode3", Value="多云" },
-        new KeyValue{ Key="mode4", Value="乌云密布" },
+        new KeyValue{ Key="default", ValueKey=Translations.ConfigItemCloudModeDefault },
+        new KeyValue{ Key="mode1", ValueKey=Translations.ConfigItemCloudModeCloudless },
+        new KeyValue{ Key="mode2", ValueKey=Translations.ConfigItemCloudModeFew },
+        new KeyValue{ Key="mode3", ValueKey=Translations.ConfigItemCloudModePartly },
+        new KeyValue{ Key="mode4", ValueKey=Translations.ConfigItemCloudModeOvercast },
     };
     public Dictionary<string, List<double>> CloudModeWeight { get; } = new()
     {
@@ -123,11 +123,11 @@ public class ConfigItems
 
     public List<KeyValue> WindMode { get; } = new()
     {
-        new KeyValue{ Key="default", Value="默认" },
-        new KeyValue{ Key="mode1", Value="无风" },
-        new KeyValue{ Key="mode2", Value="微风" },
-        new KeyValue{ Key="mode3", Value="大风" },
-        new KeyValue{ Key="mode4", Value="狂风" },
+        new KeyValue{ Key="default", ValueKey=Translations.ConfigItemWindModeDefault },
+        new KeyValue{ Key="mode1", ValueKey=Translations.ConfigItemWindModeNone },
+        new KeyValue{ Key="mode2", ValueKey=Translations.ConfigItemWindModeBreeze },
+        new KeyValue{ Key="mode3", ValueKey=Translations.ConfigItemWindModeStrong },
+        new KeyValue{ Key="mode4", ValueKey=Translations.ConfigItemWindModeGale },
     };
     public Dictionary<string, List<double>> WindModeWeight { get; } = new()
     {
@@ -140,12 +140,12 @@ public class ConfigItems
 
     public List<KeyValue> RainMode { get; } = new()
     {
-        new KeyValue{ Key="default", Value="默认" },
-        new KeyValue{ Key="mode1", Value="无雨" },
-        new KeyValue{ Key="mode2", Value="绵绵细雨" },
-        new KeyValue{ Key="mode3", Value="小雨" },
-        new KeyValue{ Key="mode4", Value="大雨" },
-        new KeyValue{ Key="mode5", Value="滂沱大雨" },
+        new KeyValue{ Key="default", ValueKey=Translations.ConfigItemRainModeDefault },
+        new KeyValue{ Key="mode1", ValueKey=Translations.ConfigItemRainModeNone },
+        new KeyValue{ Key="mode2", ValueKey=Translations.ConfigItemRainModeDrizzle },
+        new KeyValue{ Key="mode3", ValueKey=Translations.ConfigItemRainModeLight },
+        new KeyValue{ Key="mode4", ValueKey=Translations.ConfigItemRainModeHeavy },
+        new KeyValue{ Key="mode5", ValueKey=Translations.ConfigItemRainModeDownpour },
     };
     public Dictionary<string, List<double>> RainModeWeight { get; } = new()
     {
@@ -159,11 +159,11 @@ public class ConfigItems
 
     public List<KeyValue> FogMode { get; } = new()
     {
-        new KeyValue{ Key="default", Value="默认" },
-        new KeyValue{ Key="mode1", Value="无雾" },
-        new KeyValue{ Key="mode2", Value="朦胧淡雾" },
-        new KeyValue{ Key="mode3", Value="云雾缭绕" },
-        new KeyValue{ Key="mode4", Value="雾霾" },
+        new KeyValue{ Key="default", ValueKey=Translations.ConfigItemFogModeDefault },
+        new KeyValue{ Key="mode1", ValueKey=Translations.ConfigItemFogModeNone },
+        new KeyValue{ Key="mode2", ValueKey=Translations.ConfigItemFogModeLight },
+        new KeyValue{ Key="mode3", ValueKey=Translations.ConfigItemFogModeMisty },
+        new KeyValue{ Key="mode4", ValueKey=Translations.ConfigItemFogModeHaze },
     };
     public Dictionary<string, List<double>> FogModeWeight { get; } = new()
     {
@@ -199,31 +199,31 @@ public class ConfigItems
 
     public List<KeyValue> UpdateTime { get; } = new()
     {
-        new KeyValue{ Key=-1, Value="默认时间" },
-        new KeyValue{ Key=3600, Value="60分钟" },
-        new KeyValue{ Key=1800, Value="30分钟" },
-        new KeyValue{ Key=600, Value="10分钟" },
-        new KeyValue{ Key=300, Value="5分钟" },
+        new KeyValue{ Key=-1, ValueKey=Translations.ConfigItemUpdateTimeDefault },
+        new KeyValue{ Key=3600, ValueKey=Translations.ConfigItemUpdateTime60m },
+        new KeyValue{ Key=1800, ValueKey=Translations.ConfigItemUpdateTime30m },
+        new KeyValue{ Key=600, ValueKey=Translations.ConfigItemUpdateTime10m },
+        new KeyValue{ Key=300, ValueKey=Translations.ConfigItemUpdateTime5m },
     };
 
     public List<KeyValue> InsuranceTime { get; } = new()
     {
-        new KeyValue{ Key=-1, Value="默认速度" },
-        new KeyValue{ Key=4, Value="快速回保" },
-        new KeyValue{ Key=2, Value="极速回保" },
-        new KeyValue{ Key=0, Value="保险秒回" },
+        new KeyValue{ Key=-1, ValueKey=Translations.ConfigItemInsuranceTimeDefault },
+        new KeyValue{ Key=4, ValueKey=Translations.ConfigItemInsuranceTimeFast },
+        new KeyValue{ Key=2, ValueKey=Translations.ConfigItemInsuranceTimeVeryFast },
+        new KeyValue{ Key=0, ValueKey=Translations.ConfigItemInsuranceTimeInstant },
     };
     public List<KeyValue> InsuranceCost { get; } = new()
     {
-        new KeyValue{ Key=-1.0, Value="默认费用" },
-        new KeyValue{ Key=0.01, Value="非常便宜" },
-        new KeyValue{ Key=0.15, Value="一般价格" },
-        new KeyValue{ Key=0.40, Value="较为昂贵" },
-        new KeyValue{ Key=0.60, Value="极其昂贵" },
+        new KeyValue{ Key=-1.0, ValueKey=Translations.ConfigItemInsuranceCostDefault },
+        new KeyValue{ Key=0.01, ValueKey=Translations.ConfigItemInsuranceCostVeryCheap },
+        new KeyValue{ Key=0.15, ValueKey=Translations.ConfigItemInsuranceCostNormal },
+        new KeyValue{ Key=0.40, ValueKey=Translations.ConfigItemInsuranceCostExpensive },
+        new KeyValue{ Key=0.60, ValueKey=Translations.ConfigItemInsuranceCostVeryExpensive },
     };
     public List<KeyValue> ReturnChance { get; } = new()
     {
-        new KeyValue{ Key=-1, Value="默认概率" },
+        new KeyValue{ Key=-1, ValueKey=Translations.ConfigItemReturnChanceDefault },
         new KeyValue{ Key=0, Value="0%" },
         new KeyValue{ Key=20, Value="20%" },
         new KeyValue{ Key=40, Value="40%" },
@@ -233,10 +233,10 @@ public class ConfigItems
     };
     public List<KeyValue> LoadSpeed { get; } = new()
     {
-        new KeyValue{ Key="default", Value="默认速度" },
-        new KeyValue{ Key="mode1", Value="快速装卸" },
-        new KeyValue{ Key="mode2", Value="极速装卸" },
-        new KeyValue{ Key="mode3", Value="闪电装卸" },
+        new KeyValue{ Key="default", ValueKey=Translations.ConfigItemLoadSpeedDefault },
+        new KeyValue{ Key="mode1", ValueKey=Translations.ConfigItemLoadSpeedFast },
+        new KeyValue{ Key="mode2", ValueKey=Translations.ConfigItemLoadSpeedVeryFast },
+        new KeyValue{ Key="mode3", ValueKey=Translations.ConfigItemLoadSpeedLightning },
     };
     public List<KeyValue> MagazineCapacity { get; } = new()
     {
@@ -281,25 +281,25 @@ public class ConfigItems
 
     public List<KeyValue> HideoutTime { get; } = new()
     {
-        new KeyValue{ Key=-1.0, Value="默认时间" },
-        new KeyValue{ Key=30.0, Value="30秒" },
-        new KeyValue{ Key=300.00, Value="5分钟" },
-        new KeyValue{ Key=1200.0, Value="20分钟" },
-        new KeyValue{ Key=3600.0, Value="1小时" },
-        new KeyValue{ Key=10800.0, Value="3小时" },
+        new KeyValue{ Key=-1.0, ValueKey=Translations.ConfigItemHideoutTimeDefault },
+        new KeyValue{ Key=30.0, ValueKey=Translations.ConfigItemHideoutTime30s },
+        new KeyValue{ Key=300.00, ValueKey=Translations.ConfigItemHideoutTime5m },
+        new KeyValue{ Key=1200.0, ValueKey=Translations.ConfigItemHideoutTime20m },
+        new KeyValue{ Key=3600.0, ValueKey=Translations.ConfigItemHideoutTime1h },
+        new KeyValue{ Key=10800.0, ValueKey=Translations.ConfigItemHideoutTime3h },
     };
 
     public List<KeyValue> BonusesLevel { get; } = new()
     {
-        new KeyValue { Key = 1, Value = "默认加成" },
-        new KeyValue { Key = 2, Value = "双倍加成" },
-        new KeyValue { Key = 3, Value = "五倍加成" },
-        new KeyValue { Key = 4, Value = "十倍加成" },
+        new KeyValue{ Key=1, ValueKey=Translations.ConfigItemBonusesLevelDefault },
+        new KeyValue{ Key=2, ValueKey=Translations.ConfigItemBonusesLevelDouble },
+        new KeyValue{ Key=3, ValueKey=Translations.ConfigItemBonusesLevelQuintuple },
+        new KeyValue{ Key=4, ValueKey=Translations.ConfigItemBonusesLevelDecuple },
     };
     
     public List<KeyValue> RewardMultiple { get; } = new()
     {
-        new KeyValue { Key = 1, Value = "默认倍率" },
+        new KeyValue{ Key=1, ValueKey=Translations.ConfigItemRewardMultipleDefault },
         new KeyValue { Key = 2, Value = "x2" },
         new KeyValue { Key = 3, Value = "x3" },
         new KeyValue { Key = 4, Value = "x4" },
@@ -308,16 +308,22 @@ public class ConfigItems
     };
 
     public List<KeyValue> ContainerExpandWidth { get; } = Enumerable.Range(1, 20)
-        .Select(i => new KeyValue { Key = i, Value = $"{i}格" })
+        .Select(i => new KeyValue { Key = i, ValueFormatKey = Translations.ConfigItemContainerCells })
         .ToList();
     public List<KeyValue> ContainerExpandHeight { get; } = Enumerable.Range(1, 16)
-        .Select(i => new KeyValue { Key = i, Value = $"{i}格" })
+        .Select(i => new KeyValue { Key = i, ValueFormatKey = Translations.ConfigItemContainerCells })
         .ToList();
 }
 
 public class KeyValue
 {
     public object Key { get; set; }
-    public string Value { get; set; }
+    public string? Value { get; set; }
+
+    /// <summary>翻译键：非空时显示经 TranslationService 解析的文本（i18n）。</summary>
+    public string? ValueKey { get; set; }
+
+    /// <summary>含 {0} 占位符的翻译键：非空时用 Key 格式化显示（如 "ConfigItem.Container.Cells"）。</summary>
+    public string? ValueFormatKey { get; set; }
 
 }
