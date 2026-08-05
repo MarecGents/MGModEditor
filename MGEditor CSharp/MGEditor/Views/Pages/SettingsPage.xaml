@@ -10,6 +10,7 @@
     xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
     xmlns:controls="clr-namespace:MGEditor.Controls"
     Title="{DynamicResource Nav.Settings}"
+    ui:NavigationView.HeaderContent="{DynamicResource Nav.Settings}"
     d:DataContext="{d:DesignInstance local:SettingsPage,
                                 IsDesignTimeCreatable=False}"
     d:DesignHeight="1200"

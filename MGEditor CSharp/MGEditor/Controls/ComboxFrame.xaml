@@ -30,12 +30,21 @@
                                 <ui:Button
                                     Grid.Column="0"
                                     Content="{TemplateBinding ButtonContent}"
-                                    HorizontalAlignment="Left"
-                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Stretch"
                                     HorizontalContentAlignment="Center"
                                     VerticalContentAlignment="Center"
-                                    Width="180"
-                                    Margin="20,0,0,0"/>
+                                    MinHeight="36"
+                                    Margin="20,0,0,0">
+                                    <ui:Button.ContentTemplate>
+                                        <DataTemplate>
+                                            <TextBlock
+                                                Text="{Binding}"
+                                                TextWrapping="Wrap"
+                                                TextTrimming="CharacterEllipsis"
+                                                TextAlignment="Center" />
+                                        </DataTemplate>
+                                    </ui:Button.ContentTemplate>
+                                </ui:Button>
                                 <ComboBox
                                     Grid.Column="1"
                                     ItemsSource="{Binding ItemsSource, RelativeSource={RelativeSource AncestorType={x:Type controls:ComboxFrame}}}"

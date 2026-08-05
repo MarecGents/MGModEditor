@@ -298,6 +298,37 @@ public static class Translations
     public const string ThemeTeaLight = "Theme.TeaLight";
     public const string ThemeTeaDark = "Theme.TeaDark";
 
+    // ---- ContainerItem ----
+    public const string ContainerItemBallisticPlateCase = "ContainerItem.BallisticPlateCase";
+    public const string ContainerItemGingyKeychain = "ContainerItem.GingyKeychain";
+    public const string ContainerItemHolodilnickThermalBag = "ContainerItem.HolodilnickThermalBag";
+    public const string ContainerItemTHICCWeaponCase = "ContainerItem.THICCWeaponCase";
+    public const string ContainerItemTHICCItemCase = "ContainerItem.THICCItemCase";
+    public const string ContainerItemWZWallet = "ContainerItem.WZWallet";
+    public const string ContainerItemStreamerItemCase = "ContainerItem.StreamerItemCase";
+    public const string ContainerItemMedicineCase = "ContainerItem.MedicineCase";
+    public const string ContainerItemSICCPouch = "ContainerItem.SICCPouch";
+    public const string ContainerItemLuckyScavJunkBox = "ContainerItem.LuckyScavJunkBox";
+    public const string ContainerItemMagazineCase = "ContainerItem.MagazineCase";
+    public const string ContainerItemAmmunitionCase = "ContainerItem.AmmunitionCase";
+    public const string ContainerItemPistolCase = "ContainerItem.PistolCase";
+    public const string ContainerItemGrenadeCase = "ContainerItem.GrenadeCase";
+    public const string ContainerItemDocumentsCase = "ContainerItem.DocumentsCase";
+    public const string ContainerItemWeaponCase = "ContainerItem.WeaponCase";
+    public const string ContainerItemInjectorCase = "ContainerItem.InjectorCase";
+    public const string ContainerItemItemCase = "ContainerItem.ItemCase";
+    public const string ContainerItemDogtagCase = "ContainerItem.DogtagCase";
+    public const string ContainerItemSimpleWallet = "ContainerItem.SimpleWallet";
+    public const string ContainerItemKeycardHolderCase = "ContainerItem.KeycardHolderCase";
+    public const string ContainerItemKeyTool = "ContainerItem.KeyTool";
+    public const string ContainerItemMoneyCase = "ContainerItem.MoneyCase";
+
+    // ---- Home ----
+    public const string HomeHeroTitle = "Home.Hero.Title";
+    public const string HomeHeroSubtitle = "Home.Hero.Subtitle";
+    public const string HomeHeroDescription = "Home.Hero.Description";
+    public const string HomeHeroCredit = "Home.Hero.Credit";
+
     // ---- Gallery ----
     public const string GalleryNameRaid = "Gallery.Name.Raid";
     public const string GalleryNameFeature = "Gallery.Name.Feature";

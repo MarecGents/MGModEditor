@@ -28,12 +28,21 @@
                                     Content="{TemplateBinding ButtonContent}"
                                     Command="{Binding ToggleCheckCommand, RelativeSource={RelativeSource AncestorType={x:Type controls:CheckButtonFrame}}}"
                                     Grid.Column="0"
-                                    HorizontalAlignment="Left"
-                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Stretch"
                                     HorizontalContentAlignment="Center"
                                     VerticalContentAlignment="Center"
-                                    Width="180"
-                                    Margin="20,0,0,0"/>
+                                    MinHeight="36"
+                                    Margin="20,0,0,0">
+                                    <ui:Button.ContentTemplate>
+                                        <DataTemplate>
+                                            <TextBlock
+                                                Text="{Binding}"
+                                                TextWrapping="Wrap"
+                                                TextTrimming="CharacterEllipsis"
+                                                TextAlignment="Center" />
+                                        </DataTemplate>
+                                    </ui:Button.ContentTemplate>
+                                </ui:Button>
                                 <ui:ToggleSwitch 
                                     Grid.Column="1"
                                     HorizontalAlignment="Right"

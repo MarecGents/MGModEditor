@@ -100,6 +100,8 @@ public partial class SettingsViewModel : ViewModel
         new KeyValue { Key = "zh-CN", Value = "简体中文" },
         new KeyValue { Key = "en-US", Value = "English" },
         new KeyValue { Key = "ru-RU", Value = "Русский" },
+        new KeyValue { Key = "fr-FR", Value = "Français" },
+        new KeyValue { Key = "jp-JP", Value = "日本語" },
     };
 
     [ObservableProperty]

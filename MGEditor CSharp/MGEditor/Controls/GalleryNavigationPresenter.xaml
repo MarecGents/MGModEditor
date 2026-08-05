@@ -21,11 +21,13 @@
                         <ItemsControl.ItemTemplate>
                             <DataTemplate DataType="{x:Type models:NavigationCard}">
                                 <ui:CardAction
-                                Width="320"
-                                Height="90"
+                                Width="{Binding (controls:GalleryNavigationPresenter.CardWidth), RelativeSource={RelativeSource AncestorType=controls:GalleryNavigationPresenter}}"
+                                Height="{Binding CardHeight}"
                                 Margin="4"
                                 HorizontalAlignment="Left"
                                 VerticalAlignment="Stretch"
+                                ToolTip="{Binding Description}"
+                                ToolTipService.ShowDuration="10000"
                                 Command="{Binding TemplateButtonCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=controls:GalleryNavigationPresenter}, Mode=OneWay}"
                                 CommandParameter="{Binding PageType, Mode=OneTime}"
                                 IsChevronVisible="True">
@@ -47,7 +49,9 @@
                                         FontSize="12"
                                         Foreground="{DynamicResource TextFillColorSecondaryBrush}"
                                         Text="{Binding Description, Mode=OneTime}"
-                                        TextWrapping="Wrap" />
+                                        TextWrapping="Wrap"
+                                        TextTrimming="CharacterEllipsis"
+                                        MaxWidth="240" />
                                     </StackPanel>
                                 </ui:CardAction>
                             </DataTemplate>

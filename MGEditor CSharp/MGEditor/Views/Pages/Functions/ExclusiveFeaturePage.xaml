@@ -9,6 +9,7 @@
     xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
     xmlns:controls="clr-namespace:MGEditor.Controls"
     Title="{DynamicResource Nav.Feature}"
+    ui:NavigationView.HeaderContent="{DynamicResource Nav.Feature}"
     d:DataContext="{d:DesignInstance local:ExclusiveFeaturePage,
                                 IsDesignTimeCreatable=False}"
     d:DesignHeight="1200" 
@@ -55,4 +56,5 @@
         
     </StackPanel>
 </Page>
+
 

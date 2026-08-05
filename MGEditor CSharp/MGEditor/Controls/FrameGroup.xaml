@@ -22,6 +22,7 @@
                             FontTypography="BodyStrong"
                             Foreground="{DynamicResource TextFillColorPrimaryBrush}"
                             Text="{TemplateBinding HeaderText}"
+                            TextWrapping="Wrap"
                             Visibility="{TemplateBinding HeaderText,
                                                         Converter={StaticResource NullToVisibilityConverter}}" />
 

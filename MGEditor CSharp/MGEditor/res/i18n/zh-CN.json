@@ -292,16 +292,46 @@
     "TeaLight": "檀香色",
     "TeaDark": "赭石色"
   },
+  "ContainerItem": {
+    "BallisticPlateCase": "Ballistic plate case",
+    "GingyKeychain": "Gingy钥匙串",
+    "HolodilnickThermalBag": "Mr. Holodilnick保温箱",
+    "THICCWeaponCase": "THICC武器箱",
+    "THICCItemCase": "THICC物品箱",
+    "WZWallet": "WZ钱包",
+    "StreamerItemCase": "主播物品箱",
+    "MedicineCase": "医疗物品箱",
+    "SICCPouch": "小型SICC包",
+    "LuckyScavJunkBox": "幸运Scav垃圾箱",
+    "MagazineCase": "弹匣箱",
+    "AmmunitionCase": "弹药箱",
+    "PistolCase": "手枪收纳箱",
+    "GrenadeCase": "手榴弹箱",
+    "DocumentsCase": "文件包",
+    "WeaponCase": "武器箱",
+    "InjectorCase": "注射器收纳盒",
+    "ItemCase": "物品箱",
+    "DogtagCase": "狗牌包",
+    "SimpleWallet": "简易钱包",
+    "KeycardHolderCase": "钥匙卡收纳盒",
+    "KeyTool": "钥匙收纳器",
+    "MoneyCase": "钱箱"
+  },
+  "Home": {
+    "Hero.Title": "MG Editor",
+    "Hero.Subtitle": "TKF Mod 配置工具",
+    "Hero.Description": "战局 / 经济 / 养成 / 特色功能一站式调整",
+    "Hero.Credit": "MarecGents & MG Studio"
+  },
   "Gallery": {
-    "Name.Raid": "战局系统",
-    "Name.Feature": "特殊功能",
+    "Name.Raid": "战局系统",    "Name.Feature": "特殊功能",
     "Name.Economy": "经济系统",
     "Name.Develop": "养成系统",
     "Name.Container": "容器扩容",
     "Desc.Raid": "战局系统中包含：AI系统、进入战局默认选项、战局参数、资源倍率等功能。",
     "Desc.Develop": "养成系统中包含：人物基础属性、装备优化、任务优化、藏身处优化等功能.",
     "Desc.Economy": "经济系统中包含：跳蚤市场各项优化、商人交易系统等功能。",
-    "Desc.Container": "涉及到塔科夫内所有容器类型物品的扩容调节，如物品箱、医疗箱、食品箱等。",
+    "Desc.Container": "涉及到 TKF 内所有容器类型物品的扩容调节，如物品箱、医疗箱、食品箱等。",
     "Desc.Feature": "特色功能为非原版修改项，为MG手搓功能。如：独立商人、独立物品等。"
   }
 }

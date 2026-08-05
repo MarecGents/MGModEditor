@@ -17,7 +17,7 @@ public class TranslationService : INotifyPropertyChanged
     private const string DefaultLanguage = "zh-CN";
 
     /// <summary>当前支持的语言（与 res/i18n/*.json 一一对应）。</summary>
-    public static readonly IReadOnlyList<string> AvailableLanguages = new[] { "zh-CN", "en-US" };
+    public static readonly IReadOnlyList<string> AvailableLanguages = new[] { "zh-CN", "en-US", "ru-RU", "fr-FR", "jp-JP" };
 
     /// <summary>全局实例（由 DI 创建后赋值，供 XAML converter 等无 DI 上下文处使用）。</summary>
     public static TranslationService? Instance { get; set; }
@@ -165,6 +165,15 @@ public class TranslationService : INotifyPropertyChanged
         }
 
         return flat;
+    }
+
+    /// <summary>获取指定语言的全部键→值（供 OverflowChecker 等开发期工具使用）。</summary>
+    public IReadOnlyDictionary<string, string> GetAllEntries(string lang)
+    {
+        var normalized = NormalizeLanguage(lang);
+        return normalized is null
+            ? new Dictionary<string, string>()
+            : ReadLanguageFile(normalized);
     }
 
     private static HashSet<string> ExtractKeys(string lang)

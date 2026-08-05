@@ -179,7 +179,7 @@
     "AiDifficulty.Easy": "Easy",
     "AiDifficulty.Medium": "Medium",
     "AiDifficulty.Hard": "Hard",
-    "AiDifficulty.Impossible": "Nightmare",
+    "AiDifficulty.Impossible": "Impossible",
     "AiDifficulty.Random": "Random",
     "RaidTime.Default": "Default",
     "RaidTime.30m": "30 min",
@@ -292,6 +292,37 @@
     "TeaLight": "Sandalwood",
     "TeaDark": "Ochre"
   },
+  "ContainerItem": {
+    "BallisticPlateCase": "Ballistic plate case",
+    "GingyKeychain": "Gingy keychain",
+    "HolodilnickThermalBag": "Mr. Holodilnick thermal bag",
+    "THICCWeaponCase": "T H I C C Weapon case",
+    "THICCItemCase": "T H I C C item case",
+    "WZWallet": "WZ Wallet",
+    "StreamerItemCase": "Streamer item case",
+    "MedicineCase": "Medicine case",
+    "SICCPouch": "S I C C organizational pouch",
+    "LuckyScavJunkBox": "Lucky Scav Junk box",
+    "MagazineCase": "Magazine case",
+    "AmmunitionCase": "Ammunition case",
+    "PistolCase": "Pistol case",
+    "GrenadeCase": "Grenade case",
+    "DocumentsCase": "Documents case",
+    "WeaponCase": "Weapon case",
+    "InjectorCase": "Injector case",
+    "ItemCase": "Item case",
+    "DogtagCase": "Dogtag case",
+    "SimpleWallet": "Simple wallet",
+    "KeycardHolderCase": "Keycard holder case",
+    "KeyTool": "Key tool",
+    "MoneyCase": "Money case"
+  },
+  "Home": {
+    "Hero.Title": "MG Editor",
+    "Hero.Subtitle": "TKF Mod Config Tool",
+    "Hero.Description": "Raid, Economy, Develop & custom features in one place",
+    "Hero.Credit": "MarecGents & MG Studio"
+  },
   "Gallery": {
     "Name.Raid": "Raid",
     "Name.Feature": "Custom Features",
@@ -301,7 +332,7 @@
     "Desc.Raid": "Raid tweaks: AI system, raid defaults, raid parameters, loot multipliers and more.",
     "Desc.Develop": "Character base attributes, gear optimization, quest optimization, hideout optimization and more.",
     "Desc.Economy": "Flea Market optimizations, trader trading system and more.",
-    "Desc.Container": "Adjust capacity for all container items in Tarkov, such as item cases, med cases, food cases.",
+    "Desc.Container": "Adjust capacity for all container items in TKF, such as item cases, med cases, food cases.",
     "Desc.Feature": "Custom non-vanilla features handcrafted by MG: custom traders, custom items and more."
   }
 }
