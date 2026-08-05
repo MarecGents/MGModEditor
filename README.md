@@ -2,9 +2,9 @@
 
 **MG-Mod 图形化配置编辑器** — 基于 WPF 的现代化桌面 GUI 工具
 
-[![Version](https://img.shields.io/badge/version-v1.2.0.0-green)]()
+[![Version](https://img.shields.io/badge/version-v1.3.0.0-green)]()
 [![.NET](https://img.shields.io/badge/.NET-9.0--windows-512BD4)](https://dotnet.microsoft.com/)
-[![WPF-UI](https://img.shields.io/badge/WPF--UI-4.2.0-blue)]()
+[![WPF-UI](https://img.shields.io/badge/WPF--UI-4.3.0-blue)]()
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey)](LICENSE)
 
 ---
@@ -14,6 +14,8 @@
 **MGModEditor** 是 MG-Mod 的可视化配置编辑器，采用 **C# WPF** 技术栈构建。它提供了直观的图形界面，让用户可以轻松编辑 MG-Mod 的所有配置文件，无需手动修改 JSON。
 
 > 🎨 支持 **36 种主题配色**（18 种颜色 × 亮/暗模式），总有一款适合你！
+>
+> 🌍 支持 **5 种界面语言**（简体中文 / English / Русский / Français / 日本語），设置页一键切换，随系统语言自动适配。
 
 ---
 
@@ -25,7 +27,7 @@
 |------|------|
 | 语言 | C# 13 |
 | 运行时 | .NET 9.0-windows |
-| UI 框架 | **WPF** + **WPF-UI 4.2.0**（现代化控件库） |
+| UI 框架 | **WPF** + **WPF-UI 4.3.0**（现代化控件库） |
 | 架构模式 | **MVVM**（CommunityToolkit.Mvvm 8.4.0） |
 | DI 容器 | Microsoft.Extensions.Hosting 10.0.1 |
 | 发布方式 | 单文件发布 (PublishSingleFile, win-x64) |
@@ -43,7 +45,7 @@ MGEditor/
 │   └── GalleryNavigationPresenter
 ├── ControlsLookup/       ← 页面注册与导航
 ├── DependencyModel/      ← DI 扩展
-├── Helpers/              ← 工具类（JSON 读取、类型转换等）
+├── Helpers/              ← 工具类（JSON 读取、文本测量、类型转换等）
 ├── Models/               ← 数据模型
 │   ├── MGConfig.cs       ← MG 主配置模型
 │   ├── AppSetting.cs     ← 应用设置
@@ -52,6 +54,7 @@ MGEditor/
 │   ├── MGConfigService.cs    ← 配置读写
 │   ├── AppSettingService.cs  ← 应用设置
 │   ├── CustomThemeService.cs ← 主题管理
+│   ├── TranslationService.cs ← i18n 多语言翻译
 │   └── WindowsProviderService.cs
 ├── Theme/                ← 36 个主题 XAML 资源字典
 ├── ViewModels/           ← MVVM 视图模型
@@ -70,7 +73,7 @@ MGEditor/
 | **养成系统** | Scav 优化、基础属性、装备优化、附魔、任务系统（任务免费重置、任务优化）、藏身处 |
 | **容器扩容** | 容器容积、兼容性、负重设置 |
 | **特色功能** | 独立商人、独立物品、独立预设、实时跳蚤、钥匙分类、子弹数据 |
-| **设置 (Settings)** | 主题切换、应用设置 |
+| **设置 (Settings)** | 主题切换、语言切换、致谢栏（15 位作者） |
 
 ### 配置域覆盖
 
