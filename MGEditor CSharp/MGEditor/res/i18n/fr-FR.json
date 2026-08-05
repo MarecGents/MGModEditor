@@ -21,6 +21,8 @@
     "ButtonTheme": "Thème",
     "Language": "Langue",
     "HeaderAbout": "À propos",
+    "HeaderCredits": "Remerciements",
+    "CreditsText": "    Ce mod est né d'un projet personnel pour garder TKF hors ligne intéressant quand beaucoup de mods ont cessé d'être mis à jour. Grâce à la communauté Oddba et aux moddeurs qui ont partagé tutoriels et idées, le premier démo MG-Mod est né. Remerciements spéciaux à : le Super Module de 物是人非, le mod paresseux de techml, le mod marchand de 夕阳与花, les guides de Wind_L, les tutoriels de HsMikuKu, iDkGK, Silent.YH, Yuzuriha_Inori, 千叶玲花... et mes amis 大废物, AT, kmy, 星稀, sepi酱~, 臭学姐. La gentillesse de la communauté open-source me motive à continuer. À ceux qui sont partis : vous nous manquez, nous espérons que tout va bien...\n    (Le texte complet est en chinois ; voici un résumé.)",
     "ThemeLight": "Clair",
     "ThemeDark": "Sombre",
     "ThemeHighContrast": "Contraste élevé",
@@ -336,3 +338,4 @@
     "Hero.Credit": "MarecGents & MG Studio"
   }
 }
+

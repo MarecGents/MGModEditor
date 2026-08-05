@@ -21,6 +21,8 @@
     "ButtonTheme": "テーマ",
     "Language": "言語",
     "HeaderAbout": "情報",
+    "HeaderCredits": "謝辞",
+    "CreditsText": "    このMODは、多くのMODが更新停止した際にオフラインTKFを楽しみ続けるための個人的なプロジェクトとして始まりました。Oddbaコミュニティと、チュートリアルやアイデアを惜しみなく共有してくれたMOD作者のおかげで、最初のMG-Modデモが生まれました。特に感謝：物是人非のスーパーモジュール、techmlのラクダモッド、夕阳与花の商人モッド、Wind_Lのサーバー設定ガイド、HsMikuKu/iDkGK/Silent.YH/Yuzuriha_Inori/千叶玲花のチュートリアル...そして友人たち：大废物、AT、kmy、星稀、sepi酱～、臭学姐。オープンソースコミュニティの温かさが私を支えています。去った皆さんへ：会いたいです、元気でいてください...\n    (全文は中国語です。ここでは概要のみ。)",
     "ThemeLight": "ライト",
     "ThemeDark": "ダーク",
     "ThemeHighContrast": "高コントラスト",
@@ -336,3 +338,4 @@
     "Hero.Credit": "MarecGents & MG Studio"
   }
 }
+

@@ -27,6 +27,8 @@ public static class Translations
     public const string SettingsButtonTheme = "Settings.ButtonTheme";
     public const string SettingsLanguage = "Settings.Language";
     public const string SettingsHeaderAbout = "Settings.HeaderAbout";
+    public const string SettingsHeaderCredits = "Settings.HeaderCredits";
+    public const string SettingsCreditsText = "Settings.CreditsText";
     public const string SettingsThemeLight = "Settings.ThemeLight";
     public const string SettingsThemeDark = "Settings.ThemeDark";
     public const string SettingsThemeHighContrast = "Settings.ThemeHighContrast";

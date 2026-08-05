@@ -21,6 +21,8 @@
     "ButtonTheme": "Theme",
     "Language": "Language",
     "HeaderAbout": "About",
+    "HeaderCredits": "Credits",
+    "CreditsText": "    This mod started as a personal project to keep offline Tarkov (TKF) fun when many mods stopped being updated. Thanks to the Oddba community and the modders who freely shared tutorials, config parsing, and framework ideas, the first MG-Mod demo was born. Special thanks to: 物是人非's Super Module, techml's lazy mod, 夕阳与花's trader mod, Wind_L's server config guides, HsMikuKu's universal modding tutorials, iDkGK's mod tutorials, Silent.YH's guides and templates, Yuzuriha_Inori's mod tutorials, 千叶玲花's feature tutorials... and my good friends 大废物, AT, kmy, 星稀, sepi酱~, 臭学姐. The open-source community's kindness keeps me going. To those who stopped updating or left: we miss you, hope you're all doing well...\n    (Full original Chinese essay applies; other languages get this brief summary.)",
     "ThemeLight": "Light",
     "ThemeDark": "Dark",
     "ThemeHighContrast": "High Contrast",
@@ -336,3 +338,4 @@
     "Desc.Feature": "Custom non-vanilla features handcrafted by MG: custom traders, custom items and more."
   }
 }
+
