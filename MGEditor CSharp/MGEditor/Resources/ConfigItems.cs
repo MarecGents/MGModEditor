@@ -313,6 +313,15 @@ public class ConfigItems
     public List<KeyValue> ContainerExpandHeight { get; } = Enumerable.Range(1, 16)
         .Select(i => new KeyValue { Key = i, ValueFormatKey = Translations.ConfigItemContainerCells })
         .ToList();
+
+    public List<KeyValue> MapBotDifficulty { get; } = new()
+    {
+        new KeyValue { Key = "default", ValueKey = Translations.ConfigItemMapBotDifficultyDefault },
+        new KeyValue { Key = "easy", ValueKey = Translations.ConfigItemMapBotDifficultyEasy },
+        new KeyValue { Key = "normal", ValueKey = Translations.ConfigItemMapBotDifficultyNormal },
+        new KeyValue { Key = "hard", ValueKey = Translations.ConfigItemMapBotDifficultyHard },
+        new KeyValue { Key = "impossible", ValueKey = Translations.ConfigItemMapBotDifficultyImpossible },
+    };
 }
 
 public class KeyValue

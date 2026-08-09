@@ -71,6 +71,11 @@ public static class Translations
     public const string RaidButtonGroundLoot = "Raid.Button.GroundLoot";
     public const string RaidButtonValuableLoot = "Raid.Button.ValuableLoot";
     public const string RaidButtonDisableRandomContainers = "Raid.Button.DisableRandomContainers";
+    public const string RaidButtonAiNamePool = "Raid.Button.AiNamePool";
+    public const string RaidButtonPmcTacticalSquad = "Raid.Button.PmcTacticalSquad";
+    public const string RaidButtonPmcRoar = "Raid.Button.PmcRoar";
+    public const string RaidButtonMapRefreshConfig = "Raid.Button.MapRefreshConfig";
+    public const string RaidButtonMapBotDifficulty = "Raid.Button.MapBotDifficulty";
     public const string RaidMapCustoms = "Raid.Map.Customs";
     public const string RaidMapFactory = "Raid.Map.Factory";
     public const string RaidMapInterchange = "Raid.Map.Interchange";
@@ -261,6 +266,11 @@ public static class Translations
     public const string ConfigItemBonusesLevelDecuple = "ConfigItem.BonusesLevel.Decuple";
     public const string ConfigItemRewardMultipleDefault = "ConfigItem.RewardMultiple.Default";
     public const string ConfigItemContainerCells = "ConfigItem.Container.Cells";
+    public const string ConfigItemMapBotDifficultyDefault = "ConfigItem.MapBotDifficulty.Default";
+    public const string ConfigItemMapBotDifficultyEasy = "ConfigItem.MapBotDifficulty.Easy";
+    public const string ConfigItemMapBotDifficultyNormal = "ConfigItem.MapBotDifficulty.Normal";
+    public const string ConfigItemMapBotDifficultyHard = "ConfigItem.MapBotDifficulty.Hard";
+    public const string ConfigItemMapBotDifficultyImpossible = "ConfigItem.MapBotDifficulty.Impossible";
 
     // ---- Theme ----
     public const string ThemePurpleLight = "Theme.PurpleLight";

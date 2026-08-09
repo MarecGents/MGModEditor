@@ -36,6 +36,15 @@
                     ButtonContent="{DynamicResource Raid.Button.USECRatio}"
                     ItemsSource="{Binding ViewModel.ConfigItemList.USECRate}"
                     SelectedValue="{Binding ViewModel.UsecRateValue}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="{DynamicResource Raid.Button.AiNamePool}"
+                    IsChecked="{Binding ViewModel.ConfigJson.Bot.BotSystem.BotNameAdd}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="{DynamicResource Raid.Button.PmcTacticalSquad}"
+                    IsChecked="{Binding ViewModel.ConfigJson.Locations.BotSystem.PmcTacticalSquad}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="{DynamicResource Raid.Button.PmcRoar}"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.PMCRoar}"/>
             </StackPanel>
         </controls:FrameGroup>
         
@@ -103,6 +112,13 @@
                 <controls:CheckButtonFrame
                     ButtonContent="{DynamicResource Raid.Button.NoLootLoss}"
                     IsChecked="{Binding ViewModel.ConfigJson.Config.NoLostonDeath}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="{DynamicResource Raid.Button.MapRefreshConfig}"
+                    IsChecked="{Binding ViewModel.ConfigJson.Locations.BotSystem.MapRefershConfig}"/>
+                <controls:ComboxFrame
+                    ButtonContent="{DynamicResource Raid.Button.MapBotDifficulty}"
+                    ItemsSource="{Binding ViewModel.ConfigItemList.MapBotDifficulty}"
+                    SelectedValue="{Binding ViewModel.ConfigJson.Locations.BotSystem.MapBotDifficulty}"/>
             </StackPanel>
         </controls:FrameGroup>
         

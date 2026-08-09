@@ -65,6 +65,11 @@
     "Button.GroundLoot": "Ground Loot Multiplier",
     "Button.ValuableLoot": "Valuable Loot Multiplier",
     "Button.DisableRandomContainers": "Disable Random Loot Containers",
+    "Button.AiNamePool": "AI Name Pool",
+    "Button.PmcTacticalSquad": "PMC Tactical Squad",
+    "Button.PmcRoar": "PMC Roar",
+    "Button.MapRefreshConfig": "Map Refresh Config",
+    "Button.MapBotDifficulty": "Map Bot Difficulty",
     "Map.Customs": "Customs",
     "Map.Factory": "Factory",
     "Map.Interchange": "Interchange",
@@ -254,7 +259,12 @@
     "BonusesLevel.Quintuple": "x5 Bonus",
     "BonusesLevel.Decuple": "x10 Bonus",
     "RewardMultiple.Default": "Default",
-    "Container.Cells": "{0} cells"
+    "Container.Cells": "{0} cells",
+    "MapBotDifficulty.Default": "Default",
+    "MapBotDifficulty.Easy": "Easy",
+    "MapBotDifficulty.Normal": "Normal",
+    "MapBotDifficulty.Hard": "Hard",
+    "MapBotDifficulty.Impossible": "Impossible"
   },
   "Theme": {
     "PurpleLight": "Lavender",
@@ -338,4 +348,8 @@
     "Desc.Feature": "Custom non-vanilla features handcrafted by MG: custom traders, custom items and more."
   }
 }
+
+
+
+
 

@@ -65,6 +65,11 @@
     "Button.GroundLoot": "地面物资倍率",
     "Button.ValuableLoot": "贵重物品物资倍率",
     "Button.DisableRandomContainers": "关闭容器随机生成",
+    "Button.AiNamePool": "AI名字池",
+    "Button.PmcTacticalSquad": "PMC战术小队",
+    "Button.PmcRoar": "PMC怒吼",
+    "Button.MapRefreshConfig": "地图刷新参数优化",
+    "Button.MapBotDifficulty": "地图AI难度",
     "Map.Customs": "海关",
     "Map.Factory": "工厂",
     "Map.Interchange": "立交桥",
@@ -254,7 +259,12 @@
     "BonusesLevel.Quintuple": "五倍加成",
     "BonusesLevel.Decuple": "十倍加成",
     "RewardMultiple.Default": "默认倍率",
-    "Container.Cells": "{0}格"
+    "Container.Cells": "{0}格",
+    "MapBotDifficulty.Default": "默认",
+    "MapBotDifficulty.Easy": "简单",
+    "MapBotDifficulty.Normal": "正常",
+    "MapBotDifficulty.Hard": "困难",
+    "MapBotDifficulty.Impossible": "地狱"
   },
   "Theme": {
     "PurpleLight": "薰衣草色",
@@ -337,4 +347,8 @@
     "Desc.Feature": "特色功能为非原版修改项，为MG手搓功能。如：独立商人、独立物品等。"
   }
 }
+
+
+
+
 

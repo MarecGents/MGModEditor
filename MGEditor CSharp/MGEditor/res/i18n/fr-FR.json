@@ -65,6 +65,11 @@
     "Button.GroundLoot": "Butin au sol",
     "Button.ValuableLoot": "Butin de valeur",
     "Button.DisableRandomContainers": "Désactiver les conteneurs aléatoires",
+    "Button.AiNamePool": "Pool de noms IA",
+    "Button.PmcTacticalSquad": "Escouade tactique PMC",
+    "Button.PmcRoar": "Rugissement PMC",
+    "Button.MapRefreshConfig": "Optimisation du refresh des cartes",
+    "Button.MapBotDifficulty": "Difficulté IA de la carte",
     "Map.Customs": "Douane",
     "Map.Factory": "Usine",
     "Map.Interchange": "Échangeur",
@@ -254,7 +259,12 @@
     "BonusesLevel.Quintuple": "Bonus x5",
     "BonusesLevel.Decuple": "Bonus x10",
     "RewardMultiple.Default": "Par défaut",
-    "Container.Cells": "{0} cellules"
+    "Container.Cells": "{0} cellules",
+    "MapBotDifficulty.Default": "Par défaut",
+    "MapBotDifficulty.Easy": "Facile",
+    "MapBotDifficulty.Normal": "Normal",
+    "MapBotDifficulty.Hard": "Difficile",
+    "MapBotDifficulty.Impossible": "Impossible"
   },
   "Theme": {
     "PurpleLight": "Lavande",
@@ -338,4 +348,8 @@
     "Hero.Credit": "MarecGents & MG Studio"
   }
 }
+
+
+
+
 

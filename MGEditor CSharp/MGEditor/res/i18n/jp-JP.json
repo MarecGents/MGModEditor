@@ -65,6 +65,11 @@
     "Button.GroundLoot": "地上戦利品倍率",
     "Button.ValuableLoot": "貴重品戦利品倍率",
     "Button.DisableRandomContainers": "ランダムコンテナ無効化",
+    "Button.AiNamePool": "AI名前プール",
+    "Button.PmcTacticalSquad": "PMC戦術小隊",
+    "Button.PmcRoar": "PMCの雄叫び",
+    "Button.MapRefreshConfig": "マップ更新パラメータ最適化",
+    "Button.MapBotDifficulty": "マップAI難易度",
     "Map.Customs": "税関",
     "Map.Factory": "工場",
     "Map.Interchange": "インターチェンジ",
@@ -254,7 +259,12 @@
     "BonusesLevel.Quintuple": "5倍ボーナス",
     "BonusesLevel.Decuple": "10倍ボーナス",
     "RewardMultiple.Default": "デフォルト",
-    "Container.Cells": "{0}マス"
+    "Container.Cells": "{0}マス",
+    "MapBotDifficulty.Default": "デフォルト",
+    "MapBotDifficulty.Easy": "簡単",
+    "MapBotDifficulty.Normal": "普通",
+    "MapBotDifficulty.Hard": "難しい",
+    "MapBotDifficulty.Impossible": "不可能"
   },
   "Theme": {
     "PurpleLight": "ラベンダー",
@@ -338,4 +348,8 @@
     "Hero.Credit": "MarecGents & MG Studio"
   }
 }
+
+
+
+
 

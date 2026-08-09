@@ -65,6 +65,11 @@
     "Button.GroundLoot": "Лут на земле",
     "Button.ValuableLoot": "Ценный лут",
     "Button.DisableRandomContainers": "Отключить случайные контейнеры",
+    "Button.AiNamePool": "Пул имён ИИ",
+    "Button.PmcTacticalSquad": "Тактический отряд PMC",
+    "Button.PmcRoar": "Рёв PMC",
+    "Button.MapRefreshConfig": "Оптимизация обновления карт",
+    "Button.MapBotDifficulty": "Сложность ИИ на карте",
     "Map.Customs": "Таможня",
     "Map.Factory": "Завод",
     "Map.Interchange": "Развязка",
@@ -254,7 +259,12 @@
     "BonusesLevel.Quintuple": "x5 бонус",
     "BonusesLevel.Decuple": "x10 бонус",
     "RewardMultiple.Default": "Стандарт",
-    "Container.Cells": "{0} ячеек"
+    "Container.Cells": "{0} ячеек",
+    "MapBotDifficulty.Default": "Стандарт",
+    "MapBotDifficulty.Easy": "Легко",
+    "MapBotDifficulty.Normal": "Нормально",
+    "MapBotDifficulty.Hard": "Сложно",
+    "MapBotDifficulty.Impossible": "Невозможно"
   },
   "Theme": {
     "PurpleLight": "Лаванда",
@@ -338,4 +348,8 @@
     "Hero.Credit": "MarecGents & MG Studio"
   }
 }
+
+
+
+
 
