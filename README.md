@@ -2,8 +2,8 @@
 
 **MG-Mod 图形化配置编辑器** — 基于 WPF 的现代化桌面 GUI 工具
 
-[![Version](https://img.shields.io/badge/version-v1.3.0.0-green)]()
-[![.NET](https://img.shields.io/badge/.NET-9.0--windows-512BD4)](https://dotnet.microsoft.com/)
+[![Version](https://img.shields.io/badge/version-v1.3.1.0-green)]()
+[![.NET](https://img.shields.io/badge/.NET-10.0--windows-512BD4)](https://dotnet.microsoft.com/)
 [![WPF-UI](https://img.shields.io/badge/WPF--UI-4.3.0-blue)]()
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey)](LICENSE)
 
@@ -26,7 +26,7 @@
 | 组件 | 技术 |
 |------|------|
 | 语言 | C# 13 |
-| 运行时 | .NET 9.0-windows |
+| 运行时 | .NET 10.0-windows |
 | UI 框架 | **WPF** + **WPF-UI 4.3.0**（现代化控件库） |
 | 架构模式 | **MVVM**（CommunityToolkit.Mvvm 8.4.0） |
 | DI 容器 | Microsoft.Extensions.Hosting 10.0.1 |
@@ -100,7 +100,7 @@ MGModEditor 为免安装绿色单文件，直接运行 `MGEditor.exe` 即可。
 
 ### 系统要求
 - Windows x64
-- .NET 9.0 运行时（如未安装，首次运行会自动提示下载）
+- .NET 10.0 运行时（如未安装，首次运行会自动提示下载）
 
 ---
 
