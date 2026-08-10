@@ -2,7 +2,7 @@
 
 **MG-Mod 图形化配置编辑器** — 基于 WPF 的现代化桌面 GUI 工具
 
-[![Version](https://img.shields.io/badge/version-v1.3.1.0-green)]()
+[![Version](https://img.shields.io/badge/version-v1.3.1.1-green)]()
 [![.NET](https://img.shields.io/badge/.NET-10.0--windows-512BD4)](https://dotnet.microsoft.com/)
 [![WPF-UI](https://img.shields.io/badge/WPF--UI-4.3.0-blue)]()
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey)](LICENSE)
@@ -68,9 +68,9 @@ MGEditor/
 | 页面 | 功能 |
 |------|------|
 | **主页 (Home)** | 概览启动页 |
-| **战局系统** | AI 设置、AI 名字池、PMC 战术小队、PMC 怒吼、地图刷新、地图 AI 难度、资源倍率 |
+| **战局系统** | AI 设置、AI 名字池、PMC 战术小队、PMC 怒吼、地图刷新、地图 AI 难度、地图回保（含迷宫 Labyrinth）、x0 物资、资源倍率 |
 | **经济系统** | 跳蚤市场优化、商人交易设置 |
-| **养成系统** | Scav 优化、基础属性、装备优化、附魔、任务系统（任务免费重置、任务优化）、藏身处 |
+| **养成系统** | Scav 优化、基础属性、装备优化、附魔、任务系统（任务免费重置、任务优化、3X4 任务标记）、藏身处 |
 | **容器扩容** | 容器容积、兼容性、负重设置 |
 | **特色功能** | 独立商人、独立物品、独立预设、实时跳蚤、钥匙分类、子弹数据 |
 | **设置 (Settings)** | 主题切换、语言切换、致谢栏（15 位作者） |
@@ -83,7 +83,7 @@ MGEditor/
 - **Config** — 空投、AI 生成、战局默认、搜刮倍率、商人买卖、天气
 - **Globals** — 跳蚤市场、撤离、装载、护甲/武器增益、经验优化
 - **Hideout** — 建造/生产时间、Scav 箱、燃料、QTE
-- **Locations** — 战局时间、Boss/Bot 刷新、撤离、地图保险
+- **Locations** — 战局时间、Boss/Bot 刷新、撤离、地图保险（含迷宫 Labyrinth）
 - **Templates** — 物品鉴定、容器扩容、堆叠、背包/护甲/头盔过滤
 - **Traders** — 保险时间/费用
 - **MGCustom** — 自定义商人/物品/预设/同步跳蚤
