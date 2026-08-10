@@ -86,6 +86,7 @@ public static class Translations
     public const string RaidMapShoreline = "Raid.Map.Shoreline";
     public const string RaidMapStreets = "Raid.Map.Streets";
     public const string RaidMapWoods = "Raid.Map.Woods";
+    public const string RaidMapLabyrinth = "Raid.Map.Labyrinth";
 
     // ---- Develop ----
     public const string DevelopHeaderBaseAttributes = "Develop.Header.BaseAttributes";

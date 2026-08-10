@@ -176,6 +176,7 @@ public class ConfigItems
 
     public List<KeyValue> LootMultiple { get; } = new()
     {
+        new KeyValue{ Key=0, Value="x0" },
         new KeyValue{ Key=1, Value="x1" },
         new KeyValue{ Key=2, Value="x2" },
         new KeyValue{ Key=3, Value="x3" },

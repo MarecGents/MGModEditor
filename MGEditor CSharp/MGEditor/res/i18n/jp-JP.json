@@ -79,7 +79,8 @@
     "Map.GroundZero": "グラウンドゼロ",
     "Map.Shoreline": "海岸線",
     "Map.Streets": "ストリート",
-    "Map.Woods": "森"
+    "Map.Woods": "森",
+    "Map.Labyrinth": "The Labyrinth"
   },
   "Develop": {
     "Header.BaseAttributes": "基本属性",

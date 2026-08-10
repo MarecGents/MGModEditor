@@ -79,7 +79,8 @@
     "Map.GroundZero": "Нулевая точка",
     "Map.Shoreline": "Побережье",
     "Map.Streets": "Улицы",
-    "Map.Woods": "Лес"
+    "Map.Woods": "Лес",
+    "Map.Labyrinth": "Лабиринт"
   },
   "Develop": {
     "Header.BaseAttributes": "Базовые атрибуты",

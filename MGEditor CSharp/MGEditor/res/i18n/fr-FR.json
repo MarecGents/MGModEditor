@@ -79,7 +79,8 @@
     "Map.GroundZero": "Point zéro",
     "Map.Shoreline": "Littoral",
     "Map.Streets": "Rues",
-    "Map.Woods": "Forêt"
+    "Map.Woods": "Forêt",
+    "Map.Labyrinth": "Le labyrinthe"
   },
   "Develop": {
     "Header.BaseAttributes": "Attributs de base",

@@ -220,7 +220,10 @@
                 <controls:CheckButtonFrame
                     ButtonContent="{DynamicResource Raid.Map.Woods}"
                     IsChecked="{Binding ViewModel.IsWoodsEnable}"/>
-
+                
+                <controls:CheckButtonFrame
+                    ButtonContent="{DynamicResource Raid.Map.Labyrinth}"
+                    IsChecked="{Binding ViewModel.IsLabyrinthEnable}"/>
             </StackPanel>
         </controls:FrameGroup>
     </StackPanel>

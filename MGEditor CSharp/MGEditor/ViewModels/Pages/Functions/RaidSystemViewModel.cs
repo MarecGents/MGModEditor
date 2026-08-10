@@ -271,6 +271,8 @@ public partial class RaidSystemViewModel: ViewModel
     private bool _isTarkovStreetsEnable;
     [ObservableProperty]
     private bool _isWoodsEnable;
+    [ObservableProperty]
+    private bool _isLabyrinthEnable;
 
     private void MapInsuranceSettingInit()
     {
@@ -285,6 +287,7 @@ public partial class RaidSystemViewModel: ViewModel
         IsShorelineEnable = ConfigJson.Locations.MapInsurance["Shoreline"];
         IsTarkovStreetsEnable = ConfigJson.Locations.MapInsurance["TarkovStreets"];
         IsWoodsEnable = ConfigJson.Locations.MapInsurance["Woods"];
+        IsLabyrinthEnable = ConfigJson.Locations.MapInsurance["Labyrinth"];
     }
 
     partial void OnIsBigmapEnableChanged(bool value)
@@ -330,5 +333,9 @@ public partial class RaidSystemViewModel: ViewModel
     {
         ConfigJson.Locations.MapInsurance["Woods"] = value;
     }
-
+    partial void OnIsLabyrinthEnableChanged(bool value)
+    {
+        ConfigJson.Locations.MapInsurance["Labyrinth"] = value;
+    }
+    
 }

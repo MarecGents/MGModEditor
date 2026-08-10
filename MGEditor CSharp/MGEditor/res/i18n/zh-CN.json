@@ -79,7 +79,8 @@
     "Map.GroundZero": "中心区",
     "Map.Shoreline": "海岸线",
     "Map.Streets": "街区",
-    "Map.Woods": "森林"
+    "Map.Woods": "森林",
+    "Map.Labyrinth": "迷宫"
   },
   "Develop": {
     "Header.BaseAttributes": "基础属性",
