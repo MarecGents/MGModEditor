@@ -135,6 +135,7 @@ public static class Translations
     public const string DevelopButtonFullInspect = "Develop.Button.FullInspect";
     public const string DevelopButtonQuestFreeReset = "Develop.Button.QuestFreeReset";
     public const string DevelopButtonQuestOptimize = "Develop.Button.QuestOptimize";
+    public const string DevelopButtonQuest3X4Marker = "Develop.Button.Quest3X4Marker";
     public const string DevelopButtonHideoutUpgradeTime = "Develop.Button.HideoutUpgradeTime";
     public const string DevelopButtonHideoutProductionTime = "Develop.Button.HideoutProductionTime";
     public const string DevelopButtonScavCaseTime = "Develop.Button.ScavCaseTime";

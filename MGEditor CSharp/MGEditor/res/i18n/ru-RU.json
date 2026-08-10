@@ -129,6 +129,7 @@
     "Button.FullInspect": "Полный осмотр",
     "Button.QuestFreeReset": "Бесплатный сброс заданий",
     "Button.QuestOptimize": "Оптимизация заданий",
+    "Button.Quest3X4Marker": "Метка квеста 3X4",
     "Button.HideoutUpgradeTime": "Время апгрейда убежища",
     "Button.HideoutProductionTime": "Время производства",
     "Button.ScavCaseTime": "Время ящика Scav",
@@ -348,6 +349,7 @@
     "Hero.Credit": "MarecGents & MG Studio"
   }
 }
+
 
 
 

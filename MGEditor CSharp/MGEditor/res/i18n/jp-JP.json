@@ -129,6 +129,7 @@
     "Button.FullInspect": "完全検査",
     "Button.QuestFreeReset": "クエスト無料リセット",
     "Button.QuestOptimize": "クエスト最適化",
+    "Button.Quest3X4Marker": "3X4クエストマーク",
     "Button.HideoutUpgradeTime": "隠れ家アップグレード時間",
     "Button.HideoutProductionTime": "生産時間",
     "Button.ScavCaseTime": "Scavケース時間",
@@ -348,6 +349,7 @@
     "Hero.Credit": "MarecGents & MG Studio"
   }
 }
+
 
 
 

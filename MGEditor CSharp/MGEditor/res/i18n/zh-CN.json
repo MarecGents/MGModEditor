@@ -129,6 +129,7 @@
     "Button.FullInspect": "物品全检视",
     "Button.QuestFreeReset": "任务免费重置",
     "Button.QuestOptimize": "任务优化",
+    "Button.Quest3X4Marker": "3X4任务标记",
     "Button.HideoutUpgradeTime": "藏身处升级时间",
     "Button.HideoutProductionTime": "藏身处生产时间",
     "Button.ScavCaseTime": "Scav宝箱时间",
@@ -347,6 +348,7 @@
     "Desc.Feature": "特色功能为非原版修改项，为MG手搓功能。如：独立商人、独立物品等。"
   }
 }
+
 
 
 

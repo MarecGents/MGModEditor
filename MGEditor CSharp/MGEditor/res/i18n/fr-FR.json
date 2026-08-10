@@ -129,6 +129,7 @@
     "Button.FullInspect": "Inspection complète",
     "Button.QuestFreeReset": "Réinitialisation de quête gratuite",
     "Button.QuestOptimize": "Optimisation des quêtes",
+    "Button.Quest3X4Marker": "Marquage de quête 3X4",
     "Button.HideoutUpgradeTime": "Temps d'amélioration du refuge",
     "Button.HideoutProductionTime": "Temps de production",
     "Button.ScavCaseTime": "Temps de la caisse Scav",
@@ -348,6 +349,7 @@
     "Hero.Credit": "MarecGents & MG Studio"
   }
 }
+
 
 
 

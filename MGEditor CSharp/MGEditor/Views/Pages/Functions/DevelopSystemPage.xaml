@@ -196,6 +196,9 @@
                 <controls:CheckButtonFrame
                     ButtonContent="{DynamicResource Develop.Button.QuestOptimize}"
                     IsChecked="{Binding ViewModel.ConfigJson.Templates.QuestSystem.QuestOptimize}"/>
+                <controls:CheckButtonFrame
+                    ButtonContent="{DynamicResource Develop.Button.Quest3X4Marker}"
+                    IsChecked="{Binding ViewModel.ConfigJson.Templates.QuestSystem.Quest3X4Marker}"/>
             </StackPanel>
         </controls:FrameGroup>
         

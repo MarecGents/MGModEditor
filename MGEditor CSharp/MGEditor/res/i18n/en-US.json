@@ -129,6 +129,7 @@
     "Button.FullInspect": "Full Inspect",
     "Button.QuestFreeReset": "Free Quest Reset",
     "Button.QuestOptimize": "Quest Optimize",
+    "Button.Quest3X4Marker": "3X4 Quest Mark",
     "Button.HideoutUpgradeTime": "Hideout Upgrade Time",
     "Button.HideoutProductionTime": "Hideout Production Time",
     "Button.ScavCaseTime": "Scav Case Time",
@@ -348,6 +349,7 @@
     "Desc.Feature": "Custom non-vanilla features handcrafted by MG: custom traders, custom items and more."
   }
 }
+
 
 
 
